@@ -1,6 +1,4 @@
 var __config__ = {
-  page_id: "p6346ba9fc772a7f7876af649354e05c9e7e2cbe9bd687de175cec",
-  theme: { name: "marta" },
   pageTransition: true,
   linkTransition: true,
   disableDownload: true,
