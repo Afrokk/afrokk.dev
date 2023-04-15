@@ -9,14 +9,14 @@
   <p align="center">
     Portfolio Website
     <br />
-    <a href="https://afrokk.dev/" target="_blank"><strong>» CHECK IT OUT »</strong></a>
+    <a href="https://afrokk.dev/" target="_blank"><strong>» CHECK IT OUT (LEGACY VERSION) »</strong></a>
     <br />
   </p>
 </div>
 
 ## About
 
-My personal developer portfolio, built using JavaScript, jQuery, HTML/CSS and Adobe TypeKit.
+My personal developer portfolio built from scratch with React and NextJS. Work in progress.
 
 
 ## Contact
