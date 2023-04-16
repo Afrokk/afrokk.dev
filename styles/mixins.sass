@@ -1,0 +1,165 @@
+@mixin flexbox()
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+
+@mixin flex($values)
+    -webkit-box-flex: $values
+    -moz-box-flex: $values
+    -webkit-flex: $values
+    -ms-flex: $values
+    flex: $values
+
+@mixin flex-direction($direction)
+    -webkit-flex-direction: $direction
+    -moz-flex-direction: $direction
+    -ms-flex-direction: $direction
+    flex-direction: $direction
+
+@mixin flex-wrap($wrap)
+    -webkit-flex-wrap: $wrap
+    -moz-flex-wrap: $wrap
+    -ms-flex-wrap: $wrap
+    flex-wrap: $wrap
+
+@mixin flex-flow($flow)
+    -webkit-flex-flow: $flow
+    -moz-flex-flow: $flow
+    -ms-flex-flow: $flow
+    flex-flow: $flow
+
+@mixin order($val)
+    -webkit-box-ordinal-group: $val
+    -moz-box-ordinal-group: $val
+    -ms-flex-order: $val
+    -webkit-order: $val
+    order: $val
+
+@mixin flex-grow($grow)
+    -webkit-flex-grow: $grow
+    -moz-flex-grow: $grow
+    -ms-flex-grow: $grow
+    flex-grow: $grow
+
+@mixin flex-shrink($shrink)
+    -webkit-flex-shrink: $shrink
+    -moz-flex-shrink: $shrink
+    -ms-flex-shrink: $shrink
+    flex-shrink: $shrink
+
+@mixin flex-basis($width)
+    -webkit-flex-basis: $width
+    -moz-flex-basis: $width
+    -ms-flex-basis: $width
+    flex-basis: $width
+
+@mixin justify-content($justify)
+    -webkit-justify-content: $justify
+    -moz-justify-content: $justify
+    -ms-justify-content: $justify
+    justify-content: $justify
+    -ms-flex-pack: $justify
+
+@mixin align-content($align)
+    -webkit-align-content: $align
+    -moz-align-content: $align
+    -ms-align-content: $align
+    align-content: $align
+
+@mixin align-items($align)
+    -webkit-align-items: $align
+    -moz-align-items: $align
+    -ms-align-items: $align
+    -ms-flex-align: $align
+    align-items: $align
+
+
+@mixin align-self($align)
+    -webkit-align-self: $align
+    -moz-align-self: $align
+    -ms-align-self: $align
+    align-self: $align
+
+
+@mixin transform($transforms)
+    -moz-transform: $transforms
+    -o-transform: $transforms
+    -ms-transform: $transforms
+    -webkit-transform: $transforms
+    transform: $transforms
+
+
+@mixin rotate ($deg)
+    @include transform(rotate(#{$deg}deg))
+
+
+@mixin scale($scale)
+    @include transform(scale($scale))
+
+
+@mixin translate ($x, $y)
+    @include transform(translate($x, $y))
+
+@mixin skew($skew)
+    @include transform(skew(#{$skew}deg))
+
+@mixin transform-origin ($origin)
+    -moz-transform-origin: $origin
+    -o-transform-origin: $origin
+    -ms-transform-origin: $origin
+    -webkit-transform-origin: $origin
+    transform-origin: $origin
+
+
+@mixin transition($transition)
+    -moz-transition: $transition
+    -o-transition: $transition
+    -webkit-transition: $transition
+    transition: $transition
+
+
+@mixin transition-delay($delay)
+    -moz-transition-delay: $delay
+    -o-transition-delay: $delay
+    -webkit-transition-delay: $delay
+    transition-delay: $delay
+
+
+@mixin up-xsm
+    @media(min-width: $px-media-xsm + 1 )
+        @content
+
+@mixin down-xsm
+    @media(max-width: $px-media-xsm)
+        @content
+
+@mixin up-sm
+    @media(min-width: $px-media-sm + 1 )
+        @content
+
+@mixin down-sm
+    @media(max-width: $px-media-sm)
+        @content
+
+@mixin up-md
+    @media(min-width: $px-media-md + 1 )
+        @content
+
+@mixin down-md
+    @media(max-width: $px-media-md)
+        @content
+
+@mixin up-lg
+    @media(min-width: $px-media-lg + 1 )
+        @content
+
+@mixin down-lg
+    @media(max-width: $px-media-lg)
+        @content
+
+
+@mixin px-hover
+    &:hover
+        @content
