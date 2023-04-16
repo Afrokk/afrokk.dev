@@ -39,7 +39,7 @@ const ParticlesBackground = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -64,7 +64,7 @@ const ParticlesBackground = () => {
             outModes: {
               default: "bounce",
             },
-            random: false,
+            random: true,
             speed: 3,
             straight: false,
           },
@@ -73,14 +73,14 @@ const ParticlesBackground = () => {
               enable: true,
               area: 1000,
             },
-            value: 50,
+            value: 60,
           },
           opacity: {
             value: 0.5,
           },
-          // shape: {
-          //   type: "circle",
-          // },
+          shape: {
+            type: "circle",
+          },
           size: {
             value: { min: 1, max: 5 },
           },
