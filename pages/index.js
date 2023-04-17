@@ -1,6 +1,6 @@
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Layout from "@/layout/Layout";
-import TypingAnimation from "@/components/TypingAnimation"
+import TypingAnimation from "@/components/TypingAnimation";
 
 const Index = () => {
   return (
@@ -16,18 +16,25 @@ const Index = () => {
             <div className="row full-screen align-items-center">
               <div className="col-lg-6">
                 <div className="type-box">
-                  <h6>Hi, I'm</h6>
-                  <h1 className="font-alt">Afrasiyab.</h1>
+                  <h6>Hello &#128075;, I'm</h6>
+                  <h1 className="font-alt">Afrokk Khan.</h1>
                   <p className="lead">
-                    A passionate <span><TypingAnimation /></span>
+                    A passionate{" "}
+                    <span>
+                      <TypingAnimation />
+                    </span>
                   </p>
                   <p className="desc">
-                    An upcoming Software Engineer at the University of Windsor
-                    fueled by a passion for creating cutting-edge solutions.
+                    I'm an aspiring Full-Stack Software Engineer with a passion
+                    for developing clean, functional applications. Currently
+                    based in Canada. &#127809;
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="#">
-                      Donwload CV
+                      Let's talk
+                    </a>
+                    <a id="text-btn" className="px-btn px-btn-outline" href="#">
+                      Learn More
                     </a>
                   </div>
                 </div>
