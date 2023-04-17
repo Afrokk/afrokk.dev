@@ -6,8 +6,8 @@ const TypingAnimation = () => {
 
   useEffect(() => {
     const typed = new Typed(element.current, {
-      strings: ["Software Engineer",  "Designer", "Freelancer", "Photographer"], 
-      typeSpeed: 80,
+      strings: ["Software Engineer",  "Graphic Designer", "Freelancer", "Photographer"], 
+      typeSpeed: 65,
       backSpeed: 50,
       backDelay: 100,
       smartBackspace: true,
