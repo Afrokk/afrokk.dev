@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
-import "../styles/global.sass";
-import "../styles/base.sass";
+import "@/GlobalStyles/global.sass"
+import "@/GlobalStyles/base.sass"
 
 
 function MyApp({ Component, pageProps }) {
@@ -14,14 +14,14 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Fragment>
+    <>
       <Head>
         <title>Afrasiyab - Software Engineer</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       {load && <PreLoader />}
       <Component {...pageProps} />
-    </Fragment>
+    </>
   );
 }
 
