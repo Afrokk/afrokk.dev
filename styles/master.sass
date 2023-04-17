@@ -1,0 +1,220 @@
+
+.color_switch
+	position: fixed
+	top: 25px
+	right: 25px
+	width: 50px
+	height: 50px
+	line-height: 50px
+	background: $px-white
+	color: $px-dark
+	text-align: center
+	font-size: 20px
+	border-radius: 50%
+	z-index: 1111
+	cursor: pointer
+	.theme-light & 
+		background: $px-dark
+		color: $px-white
+
+.demo-back-link 
+	position: fixed
+	top: 86px
+	right: 25px
+	width: 50px
+	height: 50px
+	line-height: 50px
+	background: $px-white
+	color: $px-dark
+	text-align: center
+	font-size: 20px
+	border-radius: 50%
+	z-index: 1111
+	cursor: pointer
+	.theme-light & 
+		background: $px-dark
+		color: $px-white
+
+.pp-section
+	background: $px-bg-1
+	.theme-light &
+		background: $px-white
+
+.section
+	padding: 100px 0
+	@include down-sm
+		padding-bottom: 60px
+
+#text-btn
+	font-weight: bold
+	font-size: 15px
+	margin-left: 30px
+
+.pp-scrollable
+	overflow: auto
+
+.m-15px-tb
+	margin-top: 15px
+	padding-bottom: 15px
+
+.title
+	margin-bottom: 35px
+	@include down-sm
+		margin-bottom: 25px
+
+	h3
+		color: $px-white
+		margin: 0
+		position: relative
+		z-index: 1
+		font-weight: 300
+		font-size: 30px
+		display: inline-block
+		vertical-align: top
+		text-transform: uppercase
+		letter-spacing: 6px
+		@include down-sm
+			letter-spacing: 2px
+		.theme-light &
+			color: $px-dark
+
+		&:after
+			content: ""
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			position: absolute
+			bottom: -7px
+			left: 56px
+			right: 0
+			z-index: -1
+			background: $px-theme
+
+		&:before
+			content: ""
+			position: absolute
+			bottom: -5px
+			left: 0
+			right: 0
+			width: 60px
+			background: $px-theme
+			height: 1px
+
+.separated
+	padding-top: 80px
+	padding-bottom: 80px
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		height: 1px
+		background: $px-white
+		opacity: 0.1
+		
+		.theme-light &
+			background: $px-dark
+
+	@include down-md
+		padding-top: 80px
+		padding-bottom: 80px
+
+	@include down-sm
+		padding-top: 60px
+		padding-bottom: 60px
+
+.particles
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	opacity: 0.1
+	.theme-light &
+		background: $px-dark
+
+.home-banner
+	overflow: hidden
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		right: -20vh
+		top: -20vh
+		width: 100vh
+		height: 100vh
+		border-radius: 50%
+		background: $px-dark
+		z-index: -1
+		.theme-light &
+			background: $px-gray
+
+	.container
+		position: relative
+		z-index: 1
+
+	.full-screen
+		min-height: 100vh
+		padding-top: 100px
+		padding-bottom: 100px
+
+	.hb-img
+		img
+			@include up-md
+				max-width: 120%
+
+	.type-box
+		padding-top: 40px
+		padding-bottom: 40px
+		h6
+			color: $px-white
+			font-size: 25px
+			font-weight: 500
+			margin: 0 0 20px
+			.theme-light &
+				color: $px-dark
+
+			@include down-sm
+				font-size: 18px
+				margin: 0 0 10px
+
+		h1
+			font-size: 65px
+			font-weight: 700
+			line-height: 1
+			margin: 0 0 20px
+			color: $px-white
+			.theme-light &
+				color: $px-dark
+
+			@include down-lg
+				font-size: 70px
+
+			@include down-sm
+				font-size: 45px
+				margin-bottom: 15px
+
+		.lead
+			color: $px-white
+			font-weight: 500
+			font-size: 18px
+			margin-bottom: 25px
+			.theme-light &
+				color: $px-dark
+
+			@include down-sm
+				font-size: 16px
+				margin-bottom: 15px
+
+		.desc
+			max-width: 450px
+			font-size: 18px
+			@include down-sm
+				font-size: 16px
+
+		.btn-bar
+			padding-top: 15px
