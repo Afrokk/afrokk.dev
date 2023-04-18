@@ -25,7 +25,7 @@ const ParticlesBackground = () => {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
@@ -53,7 +53,7 @@ const ParticlesBackground = () => {
             distance: 150,
             enable: true,
             opacity: 0.8,
-            width: 0.5,
+            width: 1,
           },
           collisions: {
             enable: false,
@@ -82,7 +82,7 @@ const ParticlesBackground = () => {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 8 },
           },
         },
         detectRetina: true,
