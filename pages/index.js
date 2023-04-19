@@ -1,6 +1,7 @@
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Layout from "@/layout/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
+import About from "@/components/About";
 
 const Index = () => {
   return (
@@ -48,6 +49,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <About/>
     </Layout>
   );
 };
