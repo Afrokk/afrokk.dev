@@ -1,6 +1,6 @@
 import ImageView from "@/components/ImageView";
 import BackBtn from "./BackBtn";
-import DarkMode from "./DarkMode";
+import LightMode from "./LightMode";
 import Header from "./Header";
 
 const Layout = ({ children, blog }) => {
@@ -9,7 +9,7 @@ const Layout = ({ children, blog }) => {
       <ImageView />
       <Header blog={blog} />
       <main className="main-left pp-main-section">{children}</main>
-      <DarkMode />
+      <LightMode />
       {blog && <BackBtn />}
     </>
   );
