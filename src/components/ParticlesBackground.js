@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import Particles from "react-tsparticles";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -65,7 +65,7 @@ const ParticlesBackground = () => {
               default: "bounce",
             },
             random: true,
-            speed: 3,
+            speed: 6,
             straight: false,
           },
           number: {
@@ -82,7 +82,7 @@ const ParticlesBackground = () => {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 8 },
+            value: { min: 1, max: 7 },
           },
         },
         detectRetina: true,
