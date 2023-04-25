@@ -1,4 +1,112 @@
+import { useState } from "react";
+
 const About = () => {
+  const resumeData = [
+    {
+      id: 1,
+      logoSrc: "static/img/yt.png",
+      title: "Creative Design Manager",
+      company: (
+        <a href="https://www.youtube.com/user/XEETECHCARE" target="_blank">
+          xeetechcare
+        </a>
+      ),
+      location: "Remote",
+      date: "Mar 2019 - Present",
+      time: "Part Time",
+      description: (
+        <>
+          Directing a <b>1.7 million subscribers</b> tech YouTube channel. I
+          help create tech content for a global audience while managing multiple
+          brands like <b>Samsung</b>, <b>NordVPN</b>, <b>Anker</b> and more. My
+          SEO strategies have{" "}
+          <b>boosted views from high CPM regions by up to 40%</b>.
+        </>
+      ),
+    },
+    {
+      id: 2,
+      logoSrc: "static/img/afrokkdesigns.png",
+      title: "Freelancer",
+      company: (
+        <a href="http://afrokk.design/" target="_blank">
+          AfrokkDesigns
+        </a>
+      ),
+      location: "Remote",
+      date: "Sept 2020 - Nov 2022",
+      time: "Part Time",
+      description: (
+        <>
+          Designed over <b>800</b> photorealistic renders of upcoming tech as a
+          self-taught independent freelancer. Created websites for different
+          clients ranging from small businesses to YouTubers, using{" "}
+          <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>, and more. Lastly, I
+          did product photography for various clients including <b>BestBuy</b>,{" "}
+          <b>Oppo</b> and <b>Cornershop by Uber</b>.
+        </>
+      ),
+    },
+    {
+      id: 3,
+      logoSrc: "static/img/uwindsor.png",
+      title: "Teaching Assistant",
+      company: (
+        <a
+          href="https://www.uwindsor.ca/science/computerscience/"
+          target="_blank"
+        >
+          uWindsor School of Computer Science
+        </a>
+      ),
+      location: "Windsor, ON",
+      date: "Jan 2022 - May 2023",
+      time: "Part Time",
+      description: (
+        <>
+          <b>Mentored 100+ students</b> in three Computer Science courses,
+          providing study guides, proctoring exams, and addressing queries.
+          <b>Conducted engaging workshops</b> for a large cohort{" "}
+          <b>200+ students</b> on programming tools such as <b>C</b>, <b>SQL</b>
+          , and <b>OSs</b>, including <b>multithreading</b> and{" "}
+          <b>network socket</b> concepts.
+        </>
+      ),
+    },
+    {
+      id: 4,
+      logoSrc: "static/img/geeksultd.png",
+      title: "Co-Founder",
+      company: (
+        <a href="https://www.geeksultd.com/" target="_blank">
+          GeeksULTD
+        </a>
+      ),
+      location: "Remote",
+      date: "May 2016 - Feb 2019",
+      time: "Part Time",
+      description: (
+        <>
+          Spearheaded GeeksULTD.COM, a <b>tech/gaming website</b> for{" "}
+          <b>2+ years</b>, publishing over <b>550</b> articles, reviews, and
+          editorials on computers, tech, and gaming. Collaborated with brands
+          like Samsung, Logitech, and MSi to publish <b>30+</b> product reviews.
+          I accelerated website load times by <b>optimizing JavaScript & CSS</b>{" "}
+          files and integrating CDN technologies like <b>Cloudflare</b> and{" "}
+          <b>BunnyCDN</b>, resulting in up to <b>2x faster</b> load times.
+        </>
+      ),
+    },
+  ];
+
+  const [resumeCount, setResumeCount] = useState(3);
+  const [hiddenExperiences, setHiddenExperiences] = useState(
+    resumeData.length - 3
+  );
+  const handleLoadMore = () => {
+    setResumeCount(resumeCount + 1);
+    setHiddenExperiences(hiddenExperiences - 1);
+  };
   return (
     <section
       id="about"
@@ -37,20 +145,26 @@ const About = () => {
                   Looking for oppertunities where I can grow and jump on
                   opposite sides of the stack.&#9889;
                 </h5>
-                <div className="about-icons justify-content-center social-icons">
-                  <a href="#">
+                <div
+                  className="about-icons justify-content-center social-icons"
+                  target="_blank"
+                >
+                  <a href="https://github.com/Afrokk" target="_blank">
                     <i className="fab fa-github" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/afrokk_/" target="_blank">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://500px.com/p/Afrokk" target="_blank">
                     <i className="fab fa-500px" />
                   </a>
-                  <a href="#">
+                  <a
+                    href="https://www.linkedin.com/in/afrasiyab-k/"
+                    target="_blank"
+                  >
                     <i className="fab fa-linkedin-in" />
                   </a>
-                  <a href="#">
+                  <a href="mailto:hi@afrokk.dev">
                     <i className="fa fa-envelope" />
                   </a>
                   <div className="btn-bar">
@@ -145,93 +259,39 @@ const About = () => {
           <h3>Experience.</h3>
         </div>
         <div className="resume-box">
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/yt.png" alt="yt logo" />
+          {resumeData.slice(0, resumeCount).map((experience) => (
+            <div className="resume-row" key={experience.id}>
+              <div className="row">
+                <div className="col-sm-3 col-md-3 col-xl-2">
+                  <div className="rb-left">
+                    <img src={experience.logoSrc} alt="logo" />
+                  </div>
                 </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Creative Design Manager</h6>
-                  <label>
-                    <a
-                      href="https://www.youtube.com/user/XEETECHCARE"
-                      target="_blank"
-                    >
-                      xeetechcare
-                    </a>{" "}
-                    | Remote | Mar 2019 - Present
-                  </label>
-                  <div className="rb-time">Part Time</div>
-                  <p>
-                    Directing a 1.7 million subscriber tech YouTube channel. I
-                    help create tech content for a global audience while
-                    managing multiple brands like Samsung, NordVPN, Anker and
-                    more. My SEO strategies have boosted views from high CPM
-                    regions by up to 40%.
-                  </p>
+                <div className="col-sm-9 col-md-9 col-xl-10">
+                  <div className="rb-right">
+                    <h6>{experience.title}</h6>
+                    <label>
+                      {experience.company} | {experience.location} |{" "}
+                      {experience.date}
+                    </label>
+                    <div className="rb-time">{experience.time}</div>
+                    <p>{experience.description}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/uwindsor.png" alt="uWindsor logo" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Teaching Assistant</h6>
-                  <label>
-                    uWindsor School of Computer Science | Windsor, ON | Jan 2022
-                    - May 2023
-                  </label>
-                  <div className="rb-time">Part Time</div>
-                  <p>
-                    Mentored 100+ students in three Computer Science courses. I
-                    provided study guides, proctored exams, and addressed
-                    queries. I conducted workshops for 200+ students on
-                    programming tools such as C, SQL, and OS, including
-                    multithreading and network socket concepts.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/geeksultd.png" alt="GeeksULTD logo" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Co-Founder/Author</h6>
-                  <label>
-                    <a href="https://www.geeksultd.com/" target="_blank">
-                      GeeksULTD
-                    </a>{" "}
-                    | Remote | May 2016 - Feb 2019
-                  </label>
-                  <div className="rb-time">Part Time</div>
-                  <p>
-                    Co-Founded GeeksULTD, a tech/gaming website. I've published
-                    over 550 articles, reviews, and editorials on computers,
-                    technology, and gaming, collaborating with brands like
-                    Samsung, Logitech, and MSi to publish 30+ product reviews. I
-                    accelerated website load times by optimizing JavaScript &
-                    CSS files and integrating CDN technologies like Cloudflare
-                    and BunnyCDN, resulting in up to 2x faster load times.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
+        </div>
+        <div className="d-flex justify-content-center">
+          {resumeCount < resumeData.length && (
+            <button
+              id="text-btn"
+              className="px-btn px-btn-outline load-more-btn"
+              onClick={handleLoadMore}
+            >
+              + Load More ({hiddenExperiences})
+            </button>
+          )}
         </div>
       </div>
     </section>
