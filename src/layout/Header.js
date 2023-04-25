@@ -4,7 +4,7 @@ import ActiveSection from "../utilities/ActiveSection";
 
 const Header = ({ blog }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
-  const logoText = "<afrokk.dev/>"
+  const logoText = "<afrokk.dev/>";
   useEffect(() => {
     if (!blog) {
       ActiveSection();
@@ -50,19 +50,19 @@ const Header = ({ blog }) => {
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="#">
+          <a href="https://github.com/Afrokk" target="_blank">
             <i className="fab fa-github" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/afrokk_/" target="_blank">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
+          <a href="https://500px.com/p/Afrokk" target="_blank">
             <i className="fab fa-500px" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/afrasiyab-k/" target="_blank">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a href="#">
+          <a href="mailto:hi@afrokk.dev">
             <i className="fa fa-envelope" />
           </a>
         </div>
