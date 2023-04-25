@@ -1,10 +1,11 @@
 import { useState } from "react";
+import Gallery from "@/components/Gallery";
 
 const About = () => {
   const resumeData = [
     {
       id: 1,
-      logoSrc: "static/img/yt.png",
+      logoSrc: "static/img/thumbs/yt.png",
       title: "Creative Design Manager",
       company: (
         <a href="https://www.youtube.com/user/XEETECHCARE" target="_blank">
@@ -26,7 +27,7 @@ const About = () => {
     },
     {
       id: 2,
-      logoSrc: "static/img/afrokkdesigns.png",
+      logoSrc: "static/img/thumbs/afrokkdesigns.png",
       title: "Freelancer",
       company: (
         <a href="http://afrokk.design/" target="_blank">
@@ -49,7 +50,7 @@ const About = () => {
     },
     {
       id: 3,
-      logoSrc: "static/img/uwindsor.png",
+      logoSrc: "static/img/thumbs/uwindsor.png",
       title: "Teaching Assistant",
       company: (
         <a
@@ -75,7 +76,7 @@ const About = () => {
     },
     {
       id: 4,
-      logoSrc: "static/img/geeksultd.png",
+      logoSrc: "static/img/thumbs/geeksultd.png",
       title: "Co-Founder",
       company: (
         <a href="https://www.geeksultd.com/" target="_blank">
@@ -142,7 +143,7 @@ const About = () => {
                   years of experience in Graphics Design and Content Creation.
                 </p>
                 <h5>
-                  Looking for oppertunities where I can grow and jump on
+                  Looking for opportunities where I can grow and jump on
                   opposite sides of the stack.&#9889;
                 </h5>
                 <div
@@ -254,6 +255,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="separated" />
+        <Gallery />
         <div className="separated" />
         <div className="title">
           <h3>Experience.</h3>
