@@ -75,6 +75,7 @@ mark
 
 .owl-dots
   text-align: center
+  margin-top: 10px
   .owl-dot
     display: inline-block
     vertical-align: top
@@ -92,6 +93,23 @@ mark
       background: $px-white
     &
       background: $px-dark
+
+.swiper-pagination-bullet
+  background-color: $px-white
+  .theme-light &
+      background-color: $px-dark
+
+.swiper-pagination-bullet-active
+  background-color: $px-theme
+
+.swiper-button-prev, .swiper-button-next 
+  color: $px-body
+  width: 30px !important
+  height: 30px !important
+  font-size: 12px
+  @include transition(ease all 0.55s)
+  &:hover
+    @include scale(1.1)
 
 .owl-carousel
   .owl-item
