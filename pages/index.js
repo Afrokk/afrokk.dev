@@ -2,6 +2,7 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import Layout from "@/layout/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
 import About from "@/components/About";
+import Services from "@/components/Services";
 
 const Index = () => {
   return (
@@ -50,6 +51,7 @@ const Index = () => {
         </div>
       </section>
       <About/>
+      <Services/>
     </Layout>
   );
 };
