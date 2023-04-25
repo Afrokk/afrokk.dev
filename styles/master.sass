@@ -13,11 +13,11 @@
 	border-radius: 50%
 	z-index: 1111
 	cursor: pointer
-	.theme-light & 
+	.theme-light &
 		background: $px-dark
 		color: $px-white
 
-.demo-back-link 
+.demo-back-link
 	position: fixed
 	top: 86px
 	right: 25px
@@ -31,7 +31,7 @@
 	border-radius: 50%
 	z-index: 1111
 	cursor: pointer
-	.theme-light & 
+	.theme-light &
 		background: $px-dark
 		color: $px-white
 
@@ -49,6 +49,9 @@
 	font-weight: bold
 	font-size: 15px
 	margin-left: 30px
+
+.load-more-btn
+	color: $px-theme
 
 .pp-scrollable
 	overflow: auto
@@ -115,7 +118,7 @@
 		height: 1px
 		background: $px-white
 		opacity: 0.1
-		
+
 		.theme-light &
 			background: $px-dark
 
@@ -384,7 +387,7 @@
 			text-align: center
 			+ .px-btn
 				margin-left: 22px
-	
+
 	.about-icons
 		padding: 15px 0
 		justify-content: center
@@ -398,3 +401,286 @@
 
 			&:hover
 				color: $px-theme
+
+.feature-box-01
+	padding: 40px
+	overflow: hidden
+	z-index: 1
+	background: $px-dark
+	@include transition(ease background 0.35s)
+	.theme-light &
+		background: $px-gray
+
+	@include down-md
+		padding: 20px
+
+	.icon
+		width: 60px
+		height: 60px
+		line-height: 60px
+		font-size: 40px
+		color: $px-white
+		text-align: center
+		.theme-light &
+			color: $px-dark
+
+	.feature-content
+		padding-left: 25px
+		@include down-md
+			padding-left: 15px
+
+	h5
+		margin-bottom: 15px
+		color: $px-white
+		.theme-light &
+			color: $px-dark
+
+	p
+		margin: 0
+
+	&:hover
+		background: $px-theme
+		.icon
+			color: $px-white
+			.theme-light
+				color: $px-white
+
+		h5
+			color: $px-white
+			.theme-light &
+				color: $px-white
+		p
+			.theme-light &
+				color: $px-white
+
+.gallery
+	position: relative
+
+	&-img
+		position: relative
+
+	&-caption
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 10px
+		background-color: rgba(0, 0, 0, 0.7)
+		color: $px-white
+		z-index: 1
+
+	&-caption p
+		font-weight: 300
+		margin: 0
+
+.testimonial
+	background: $px-dark
+	padding: 35px
+	overflow: hidden
+	margin-top: 15px
+	margin-bottom: 25px
+	.theme-light &
+		background: $px-gray
+
+	.avatar
+		width: 100px
+		height: 100px
+		overflow: hidden
+		@include down-sm
+			width: 50px
+			height: 50px
+
+	.media-body
+		padding-left: 25px
+		@include down-sm
+			padding-left: 15px
+
+	h6
+		color: $px-white
+		margin: 0 0 5px
+		.theme-light &
+			color: $px-dark
+
+	span
+		font-size: 13px
+
+.resume-box
+	display: inline-block
+	vertical-align: top
+	color: white
+	width: 100%
+	margin-top: 15px
+	background: $px-dark
+	.theme-light &
+		background: $px-gray
+
+.resume-row
+	padding: 35px
+	@include down-md
+		padding: 20px
+
+	+ .resume-row
+		border-top: 1px solid rgba($px-white, 0.05)
+		.theme-light &
+			border-top: 1px solid rgba($px-dark, 0.5)
+
+	h6
+		color: $px-white
+		font-weight: 500
+		font-size: 20px
+		.theme-light &
+			color: $px-dark
+	&
+		color: $px-dark
+
+	.rb-left
+		min-height: 100%
+		text-align: center
+		img
+			.theme-light &
+				filter: invert(1)
+
+		@include down-sm
+			margin-bottom: 25px
+			text-align: left
+			img
+				max-width: 100px
+
+	.rb-time
+		display: inline-block
+		padding: 5px 10px
+		color: $px-white
+		background: $px-theme
+		font-size: 10px
+		font-weight: 300
+		text-transform: uppercase
+		letter-spacing: 2px
+		position: absolute
+		top: 0
+		right: 0
+		@include down-sm
+			position: relative
+			margin-bottom: 14px
+			vertical-align: top
+
+	h6
+		margin-bottom: 5px
+
+	label
+		color: $px-white
+		font-size: 13px
+		margin-bottom: 12px
+		@include down-sm
+			width: 100%
+			margin-bottom: 6px
+		.theme-light &
+			color: $px-dark
+
+	.rb-right
+		p
+			color: rgba(255, 255, 255, 0.8)
+			margin-bottom: 0
+			width: 85%
+			.theme-light &
+				color: $px-dark
+
+		b
+			color: $px-white
+			.theme-light &
+				color: $px-dark
+
+.skills-box
+	h3
+		color: $px-white
+		margin: 0 0 15px
+		.theme-light &
+			color: $px-dark
+
+	h5
+		color: $px-white
+		.theme-light &
+			color: $px-dark
+
+	p
+		padding-bottom: 10px
+
+.skill-lt
+	position: relative
+	span
+		width: 14px
+		height: 14px
+		border-radius: 50%
+		background: $px-theme
+		position: absolute
+		right: -1px
+		top: -5px
+
+	&:not(:first-child)
+		margin-top: 25px
+
+	h6
+		font-size: 14px
+		margin: 0 0 10px
+		font-weight: 400
+		color: $px-white
+		.theme-light &
+			color: $px-dark
+
+	.skill-bar
+		position: relative
+		background: rgba($px-white, .2)
+		.theme-light &
+			background: rgba($px-dark, .1)
+
+		.skill-bar-in
+			width: 80px
+			position: relative
+			@include transition(ease all 0.55s)
+			height: 5px
+			background: $px-theme
+
+.education-box
+	margin: 0
+	padding: 0
+	background: $px-dark
+	list-style: none
+	.theme-light &
+		background: $px-gray
+
+	@include down-md
+		margin-bottom: 10px
+
+	p
+		margin: 0
+
+	h6
+		color: $px-white
+		margin: 5px 0
+		.theme-light &
+			color: $px-dark
+
+	span
+		background: $px-theme
+		color: $px-white
+		font-size: 11px
+		padding: 1px 8px
+		display: inline-block
+		vertical-align: top
+		letter-spacing: 1px
+		margin-left: -24px
+		position: relative
+		margin-bottom: 9px
+		&:after
+			content: ""
+			position: absolute
+			bottom: -5px
+			left: 0
+			border-top: 5px solid darken($px-theme, 25%)
+			border-left: 5px solid transparent
+
+	li
+		padding: 20px 20px
+		+ li
+			border-top: 1px solid rgba($px-white, 0.08)
+			.theme-light &
+				border-top: 1px solid rgba($px-dark, 0.5)
