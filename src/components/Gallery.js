@@ -14,7 +14,7 @@ const Gallery = () => {
     spaceBetween: 25,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 8000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
@@ -52,39 +52,47 @@ const Gallery = () => {
           <div>
             <img
               className="gallery-img"
-              src="static/img/gallery/csgames.jpg"
-              title=""
-              alt=""
+              src="static/img/gallery/hashcode.jpg"
+              title="Google HashCode 2022."
+              alt="Google HashCode 2022."
             />
           </div>
           <div className="media-body gallery-caption">
-            <p>lorem ipsum</p>
+            <p>Google HashCode 2022.</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
             <img
               className="gallery-img"
-              src="static/img/gallery/csgames.jpg"
-              title=""
-              alt=""
+              src="static/img/gallery/sony.jpg"
             />
           </div>
           <div className="media-body gallery-caption">
-            <p>lorem ipsum</p>
+            <p>Occasionally, I review tech.</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
             <img
               className="gallery-img"
-              src="static/img/gallery/csgames.jpg"
-              title=""
-              alt=""
+              src="static/img/gallery/setup1.jpg"
+              title="Desk Setup '23."
+              alt="Desk Setup '23."
             />
           </div>
           <div className="media-body gallery-caption">
-            <p>lorem ipsum</p>
+            <p>Desk Setup '23.</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="gallery media d-flex">
+          <div>
+            <img
+              className="gallery-img"
+              src="static/img/gallery/setup2.jpg"
+              title=""
+              alt=""
+            />
           </div>
         </SwiperSlide>
         <div className="swiper-button-prev"></div>
