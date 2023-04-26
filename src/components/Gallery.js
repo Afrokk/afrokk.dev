@@ -13,11 +13,7 @@ const Gallery = () => {
     slidesPerView: 2,
     spaceBetween: 25,
     loop: true,
-    autoplay: {
-      delay: 8000,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    autoplay: false,
     pagination: {
       el: ".owl-dots",
       clickable: true,
