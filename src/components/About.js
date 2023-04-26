@@ -101,17 +101,21 @@ const About = () => {
           <b>BunnyCDN</b>, resulting in up to <b>2x faster</b> load times.
         </>
       ),
-    },
+    }
   ];
 
   const [resumeCount, setResumeCount] = useState(3);
   const [hiddenExperiences, setHiddenExperiences] = useState(
-    resumeData.length - 3
+    resumeData.length - resumeCount
   );
+
   const handleLoadMore = () => {
-    setResumeCount(resumeCount + 1);
-    setHiddenExperiences(hiddenExperiences - 1);
+    const remainingExperiences = resumeData.length - resumeCount;
+    const increment = Math.min(1, remainingExperiences);
+    setResumeCount(resumeCount + increment);
+    setHiddenExperiences(remainingExperiences - increment);
   };
+
   return (
     <section
       id="about"
@@ -124,7 +128,11 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
+                  <img
+                    src="static/img/about-me.png"
+                    title="An image collage showcasing my favourite hobbies/things."
+                    alt="An image collage showcasing my favourite hobbies/things."
+                  />
                 </div>
               </div>
             </div>
@@ -290,7 +298,7 @@ const About = () => {
           ))}
         </div>
         <div className="d-flex justify-content-center">
-          {resumeCount < resumeData.length && (
+          {hiddenExperiences > 0 && (
             <button
               id="text-btn"
               className="px-btn px-btn-outline load-more-btn"
