@@ -1,5 +1,9 @@
 import { useState } from "react";
-import Gallery from "@/components/Gallery";
+import dynamic from "next/dynamic";
+
+const Gallery = dynamic(() => import("./Gallery"), {
+  ssr: false,
+});
 
 const About = () => {
   const resumeData = [
