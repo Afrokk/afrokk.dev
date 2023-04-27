@@ -2,7 +2,11 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import Layout from "@/sidebar/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
+import dynamic from "next/dynamic";
+
+const Projects = dynamic(() => import("@/components/Projects"), {
+  ssr: false,
+});
 
 const Index = () => {
   return (

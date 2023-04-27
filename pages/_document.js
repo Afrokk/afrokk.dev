@@ -8,17 +8,8 @@ export default function Document() {
           href="static/plugins/bootstrap/css/bootstrap.min.css"
           rel="stylesheet"
         />
-        <link href="static/plugins/et-line/style.css" rel="stylesheet" />
         <link
           href="static/plugins/themify-icons/themify-icons.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugins/owl-carousel/css/owl.carousel.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugins/magnific/magnific-popup.css"
           rel="stylesheet"
         />
         <link
