@@ -1,5 +1,5 @@
 import ParticlesBackground from "@/components/ParticlesBackground";
-import Layout from "@/layout/Layout";
+import Layout from "@/sidebar/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
