@@ -70,7 +70,7 @@ const About = () => {
       description: (
         <>
           <b>Mentored 100+ students</b> in three Computer Science courses,
-          providing study guides, proctoring exams, and addressing queries.
+          providing study guides, proctoring exams, and addressing queries.{" "}
           <b>Conducted engaging workshops</b> for a large cohort{" "}
           <b>200+ students</b> on programming tools such as <b>C</b>, <b>SQL</b>
           , and <b>OSs</b>, including <b>multithreading</b> and{" "}
@@ -101,7 +101,7 @@ const About = () => {
           <b>BunnyCDN</b>, resulting in up to <b>2x faster</b> load times.
         </>
       ),
-    }
+    },
   ];
 
   const [resumeCount, setResumeCount] = useState(3);
@@ -304,7 +304,10 @@ const About = () => {
               className="px-btn px-btn-outline load-more-btn"
               onClick={handleLoadMore}
             >
-              + Load More ({hiddenExperiences})
+              <>
+                <i className="ti-angle-down"></i> Load More ({hiddenExperiences}
+                )
+              </>
             </button>
           )}
         </div>

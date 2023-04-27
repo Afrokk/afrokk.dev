@@ -90,6 +90,9 @@ const Gallery = () => {
               alt=""
             />
           </div>
+          <div className="media-body gallery-caption">
+            <p>Proud member of the PCMR.</p>
+          </div>
         </SwiperSlide>
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
