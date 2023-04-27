@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
-      "@/layout/*": ["src/layout/*"],
+      "@/sidebar/*": ["src/sidebar/*"],
       "@/ComponentStyles/*": ["src/styles/*"],
       "@/GlobalStyles/*": ["styles/*"],
       "@/pages/*": ["pages/*"],
