@@ -3,10 +3,12 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
-      "@/sidebar/*": ["src/sidebar/*"],
+      "@/layouts/*": ["src/layouts/*"],
       "@/ComponentStyles/*": ["src/styles/*"],
       "@/GlobalStyles/*": ["styles/*"],
       "@/pages/*": ["pages/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/utilities/*": ["src/utilities/*"],
     }
   }
 }
