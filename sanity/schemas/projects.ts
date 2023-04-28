@@ -24,6 +24,30 @@ export default {
       description: 'A brief description of the project.',
     },
     {
+      name: 'description2',
+      type: 'text',
+      title: 'Description',
+      description: 'More about the project (Paragraph 2).',
+    },
+    {
+      name: 'motivation',
+      type: 'text',
+      title: 'Motivation',
+      description: 'Motivation behind the project.',
+    },
+    {
+      name: 'features',
+      title: 'Features',
+      type: 'array',
+      of: [{ type: 'string' }]
+    },
+    {
+      name: 'footnotes',
+      type: 'text',
+      title: 'Footnotes',
+      description: 'Footnotes for the project.',
+    },
+    {
       name: 'image',
       type: 'image',
       title: 'Image',
