@@ -1,6 +1,6 @@
 import Head from "next/head";
+import PreLoader from "@/layouts/PreLoader"
 import { useEffect, useState } from "react";
-import PreLoader from "@/sidebar/PreLoader";
 import "@/GlobalStyles/global.sass"
 import "@/GlobalStyles/base.sass"
 
