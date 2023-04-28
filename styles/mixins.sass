@@ -159,6 +159,9 @@
     @media(max-width: $px-media-lg)
         @content
 
+@mixin custom-breakpoint($breakpoint)
+    @media(max-width: $breakpoint )
+        @content
 
 @mixin px-hover
     &:hover

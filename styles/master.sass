@@ -78,6 +78,10 @@
 		letter-spacing: 6px
 		@include down-sm
 			letter-spacing: 2px
+		@include down-xsm
+			font-size: 24px
+		@include custom-breakpoint(384px)
+			font-size: 18px
 		.theme-light &
 			color: $px-dark
 
@@ -345,6 +349,11 @@
 				background: $px-theme
 				color: $px-white
 
+.project-section-title
+	h3
+		@include down-md
+			margin-bottom: 30px
+
 .about-info
 	@include up-lg
 		padding-left: 50px
@@ -401,18 +410,49 @@
 
 			&:hover
 				color: $px-theme
+.alert-info
+	background-color: $px-bg-3
+	border-color: $px-theme
+	color: $px-white
+	.theme-light &
+		color: $px-black
+		background-color: $px-white
+
+	& i
+		margin-right: 0.5rem
+		.theme-light &
+			color: $px-black
+
+	.close
+		color: $px-white
+		opacity: 0.9
+		outline: none
+		text-decoration: none
+		border: none
+		&:hover
+			color: $px-gray
+			text-decoration: none
+		.theme-light &
+			color: $px-dark
+
+.alert .close:focus
+	outline: none
+
+.fas.fa-info-circle
+	color: $px-white
 
 .feature-box-01
+	display: flex
 	padding: 40px
 	overflow: hidden
+	min-height: 200px
+	cursor: pointer
 	z-index: 1
 	background: $px-dark
-	@include transition(ease background 0.35s)
+	@include transition(ease all 0.35s)
 	.theme-light &
+		color: $px-dark
 		background: $px-gray
-
-	@include down-md
-		padding: 20px
 
 	.icon
 		width: 60px
@@ -429,9 +469,13 @@
 		@include down-md
 			padding-left: 15px
 
+	img
+		@include custom-breakpoint(384px)
+			max-width: 100px
 	h5
 		margin-bottom: 15px
 		color: $px-white
+		@include transition(ease all 0.35s)
 		.theme-light &
 			color: $px-dark
 
@@ -440,6 +484,7 @@
 
 	&:hover
 		background: $px-theme
+		transform: scale(1.1)
 		.icon
 			color: $px-white
 			.theme-light
@@ -450,8 +495,31 @@
 			.theme-light &
 				color: $px-white
 		p
+			color: $px-white
 			.theme-light &
 				color: $px-white
+
+	@include custom-breakpoint(1400px)
+		padding: 20px
+		height: 325px
+
+	@include down-md
+		text-align: center
+		height: 420px
+		padding: 20px
+		height: 420px
+		&:hover
+			transform: scale(1.07)
+		h5
+			padding-top: 15px
+			font-size: 16px
+		p
+			padding-top: 5px
+
+	@include down-xsm
+		height: auto
+		&:hover
+			transform: scale(1.05)
 
 .gallery
 	position: relative
@@ -479,20 +547,23 @@
 	overflow: hidden
 	margin-top: 15px
 	margin-bottom: 25px
+	height: 300px
+
 	.theme-light &
 		background: $px-gray
 
 	.avatar
-		width: 100px
-		height: 100px
+		width: 120px
+		height: 120px
 		overflow: hidden
 		@include down-sm
-			width: 50px
-			height: 50px
+			border-radius: 50%
+			margin-bottom: 15px
 
 	.media-body
 		padding-left: 25px
 		@include down-sm
+			flex: 0
 			padding-left: 15px
 
 	h6
@@ -503,6 +574,32 @@
 
 	span
 		font-size: 13px
+
+.testimonial
+	@include down-sm
+		height: 450px
+
+.quote
+	padding-top: 15px
+	color: $px-gray
+	.theme-light &
+		color: $px-dark
+
+	&:before
+		content: open-quote
+		font-size: 2.5rem
+		color: $px-theme
+		line-height: 0.1em
+		margin-right: 3px
+		vertical-align: -0.4em
+
+	&:after
+		content: close-quote
+		font-size: 2.5rem
+		color: $px-theme
+		line-height: 0.1em
+		margin-left: 5px
+		vertical-align: -0.4em
 
 .resume-box
 	display: inline-block
@@ -577,10 +674,15 @@
 			color: $px-dark
 
 	.rb-right
+		h6
+			@include custom-breakpoint(384px)
+				font-size: 18px
 		p
 			color: rgba(255, 255, 255, 0.8)
 			margin-bottom: 0
 			width: 85%
+			@include custom-breakpoint(384px)
+				font-size: 14px
 			.theme-light &
 				color: $px-dark
 
@@ -684,3 +786,116 @@
 			border-top: 1px solid rgba($px-white, 0.08)
 			.theme-light &
 				border-top: 1px solid rgba($px-dark, 0.5)
+
+.contact-info
+	background: $px-dark
+	padding: 30px
+	.theme-light &
+		background: $px-gray
+
+	@include down-md
+		margin-bottom: 20px
+
+	h4
+		font-size: 28px
+		color: $px-white
+		font-weight: 500
+		margin-bottom: 20px
+		.theme-light &
+			color: $px-dark
+
+	p
+		font-size: 16px
+
+	ul
+		margin: 0
+		padding: 10px 0 0
+		list-style: none
+
+	li
+		font-size: 18px
+		font-weight: 500
+		color: $px-white
+		line-height: 1.3
+		position: relative
+		.theme-light &
+			color: $px-dark
+		i
+			width: 30px
+			text-align: center
+			color: $px-theme
+			font-size: 22px
+
+		span
+			padding-left: 10px
+
+		+ li
+			padding-top: 20px
+
+.contact-form
+	background: $px-dark
+	padding: 30px
+	.theme-light &
+		background: $px-gray
+
+	@include down-md
+		margin-bottom: 20px
+
+	h4
+		font-weight: 500
+		color: $px-white
+		font-size: 22px
+		margin-bottom: 20px
+		.theme-light &
+			color: $px-dark
+
+	.form-control
+		color: $px-white
+		background: none
+		border: 1px solid rgba($px-white, 0.3)
+		border-radius: 0
+		box-shadow: none
+		font-size: 14px
+		height: calc(2em + .75rem + 2px)
+		&.invalid
+			border-color: #dc3545!important
+
+		.theme-light &
+			color: $px-dark
+			border: 1px solid rgba($px-dark, 0.3)
+			background: $px-white
+
+	textarea.form-control
+		height: auto
+
+.feature-box-01:hover .tag-cloud
+	a
+		background: #0184b4
+		color: $px-white
+
+.tag-cloud
+	display: inline-block
+	padding: 0
+	margin-bottom: 5px
+	a
+		@include transition(ease all 0.35s)
+		padding: 4px 12px
+		display: inline-block
+		margin: 0
+		font-size: 11px
+		color: $px-white
+		background: #262626
+		border-radius: 2px
+		margin-right: 4px
+		margin-bottom: 4px
+		font-weight: 400
+		.theme-light &
+			color: $px-white
+			background: $px-bg-1
+	@include down-md
+		flex-direction: column
+
+.feature-box-01 .tag-cloud
+	a:hover
+		background: black
+		color: $px-white
