@@ -9,7 +9,7 @@
   <p align="center">
     Portfolio Website
     <br />
-    <a href="https://afrokk.dev/" target="_blank"><strong>» CHECK IT OUT (LEGACY VERSION) »</strong></a>
+    <a href="https://afrokk.dev/" target="_blank"><strong>» CHECK IT OUT »</strong></a>
     <br />
   </p>
 </div>
