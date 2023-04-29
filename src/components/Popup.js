@@ -1,6 +1,13 @@
 import useClickOutside from "@/hooks/UseClickOutside";
+import dynamic from "next/dynamic";
+import "yet-another-react-lightbox/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper/core";
+
+const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
+  ssr: false,
+});
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -26,6 +33,7 @@ const Popup = ({ open, close, project, urlFor }) => {
   if (project == null) {
     return;
   }
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const swiperProps = {
     slidesPerView: 1,
     spaceBetween: 25,
@@ -92,9 +100,31 @@ const Popup = ({ open, close, project, urlFor }) => {
             <Swiper {...swiperProps}>
               {project.imageGallery.map((image, idx) => (
                 <SwiperSlide key={idx}>
-                  <img src={urlFor(image).url()} alt={project.title} />
+                  <img
+                    src={urlFor(image).url()}
+                    alt={project.title}
+                    onClick={() => setLightboxOpen(true)}
+                  />
                 </SwiperSlide>
               ))}
+              <Lightbox
+                open={lightboxOpen}
+                close={() => setLightboxOpen(false)}
+                slides={project.imageGallery.map((image) => ({
+                  src: urlFor(image).url(),
+                  width: 900,
+                  height: 900,
+                }))}
+                controller={{
+                  closeOnBackdropClick: true,
+                }}
+                styles={{
+                  root: {},
+                  container: {
+                    backgroundColor: "rgba(0, 0, 0, 0.851)",
+                  },
+                }}
+              />
               <div className="swiper-button-prev"></div>
               <div className="swiper-button-next"></div>
             </Swiper>
