@@ -31,7 +31,7 @@ const Testimonials = () => {
       <Swiper {...props}>
         <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
           <div className="avatar order-md-1 order-1">
-            <img src="static/img/thumbs/testimonial1.jpeg" title="" alt="" />
+            <img src="static/img/thumbs/testimonial1.jpeg"/>
           </div>
           <div className="media-body order-md-2 order-2">
             <p className="quote">
@@ -47,7 +47,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
           <div className="avatar order-md-1 order-1">
-            <img src="static/img/thumbs/testimonial2.jpeg" title="" alt="" />
+            <img src="static/img/thumbs/testimonial2.jpeg"/>
           </div>
           <div className="media-body order-md-2 order-2">
             <p className="quote">
