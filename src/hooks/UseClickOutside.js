@@ -6,6 +6,7 @@ const useClickOutside = (handler) => {
   useEffect(() => {
     let maybeHandler = (event) => {
       if (
+        event.target.classList.contains("yarl__icon") ||
         event.target.classList.contains("color_switch") ||
         event.target.classList.contains("fa-moon") ||
         domElement.current.contains(event.target)
