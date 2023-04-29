@@ -43,12 +43,12 @@ const About = () => {
       time: "Part Time",
       description: (
         <>
-          Designed over <b>800</b> photorealistic renders of upcoming tech as a
-          self-taught independent freelancer. Created websites for different
-          clients ranging from small businesses to YouTubers, using{" "}
-          <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>, and more. Lastly, I
-          did product photography for various clients including <b>BestBuy</b>,{" "}
-          <b>Oppo</b> and <b>Cornershop by Uber</b>.
+          Created websites for different clients ranging from small businesses
+          to YouTubers, using <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>,
+          and more. Designed over <b>800</b> photorealistic renders of upcoming
+          tech as a self-taught independent freelancer. Lastly, I did product
+          photography for various clients including <b>BestBuy</b>, <b>Oppo</b>{" "}
+          and <b>Cornershop by Uber</b>.
         </>
       ),
     },
