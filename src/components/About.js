@@ -158,10 +158,7 @@ const About = () => {
                   Looking for opportunities where I can grow and jump on
                   opposite sides of the stack.&#9889;
                 </h5>
-                <div
-                  className="about-icons justify-content-center social-icons"
-                  target="_blank"
-                >
+                <div className="about-icons justify-content-center social-icons">
                   <a href="https://github.com/Afrokk" target="_blank">
                     <i className="fab fa-github" />
                   </a>
@@ -181,7 +178,7 @@ const About = () => {
                     <i className="fa fa-envelope" />
                   </a>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
+                    <a className="px-btn px-btn-theme" href="#contact">
                       <span>Contact</span>
                     </a>
                   </div>
