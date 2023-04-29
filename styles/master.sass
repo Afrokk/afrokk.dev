@@ -175,9 +175,15 @@
 
 	.hb-img
 		img
+			border: 3px solid $px-theme
+			border-radius: 50%
+			opacity: 0.96
 			@include up-md
-				max-width: 120%
-			
+				width: 95%
+			@include down-md
+				width: 85%
+			@include down-xsm
+				max-width: 100%
 
 	.type-box
 		padding-top: 40px

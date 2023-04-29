@@ -38,7 +38,7 @@ const Sidebar = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpg" title="" alt="" />
+                <img src="static/img/nav-me.jpg" title="" alt="" />
               </div>
               <h5>
                 Afrasiyab (Afrokk)
