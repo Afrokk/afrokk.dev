@@ -161,6 +161,8 @@
 		z-index: -1
 		.theme-light &
 			background: $px-gray
+		@include down-sm
+			display: none
 
 	.container
 		position: relative
@@ -175,6 +177,7 @@
 		img
 			@include up-md
 				max-width: 120%
+			
 
 	.type-box
 		padding-top: 40px
@@ -206,6 +209,13 @@
 			@include down-sm
 				font-size: 45px
 				margin-bottom: 15px
+		
+		.btn-bar
+			@include down-xsm
+				width: 85vw
+				margin-left: 0
+				#text-btn
+					display: none
 
 		.lead
 			color: $px-white
@@ -808,6 +818,10 @@
 	@include down-md
 		padding-bottom: 100px
 
+#about
+	@include down-xsm
+		padding-top: 0
+
 .contact-info
 	background: $px-dark
 	padding: 30px
@@ -985,14 +999,3 @@
 		color: $px-gray
 		.theme-light &
 			color: $px-white
-
-body .color_switch
-	@include down-xsm
-		width: 25px
-		height: 25px
-		top: 86px
-		right: 300px
-		i
-			font-size: 10px
-			position: relative
-			top: -63%
