@@ -20,11 +20,11 @@
 
     & .box-inner
         position: absolute
-        top: 20%
+        top: 15%
         bottom: 70px
         // Modal Content Size
         width: 800px
-        height: 800px
+        height: 75vh
         left: 50%
         transform: translateX(-50%)
         background-color: $px-bg-1
@@ -43,7 +43,8 @@
         
         @include down-md
             width: 600px
-            height: 800px
+            height: 75vh
+            top: 15%
         
         @include down-sm
             width: 500px
@@ -51,11 +52,13 @@
 
         @include down-xsm
             width: 350px
-            height: 900px
+            height: 75vh
+            top: 15%
 
         @include custom-breakpoint(384px)
             width: 245px
-            height: 900px
+            height: 75vh
+            top: 15%
 
     &.opened .box-inner
         opacity: 1
@@ -219,6 +222,7 @@
         margin: 0 auto
         width: 100%
         height: auto
+        cursor: pointer
 
 .swiper-slide
     display: flex
