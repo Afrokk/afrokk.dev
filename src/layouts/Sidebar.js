@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ActiveSection from "../utilities/ActiveSection";
+import Image from "next/image";
 
 const Sidebar = ({ blog }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -38,7 +39,12 @@ const Sidebar = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/nav-me.jpg" title="" alt="" />
+                <Image
+                  src="/static/img/nav-me.jpg"
+                  width={90}
+                  height={87}
+                  alt="Thumb image."
+                />
               </div>
               <h5>
                 Afrasiyab (Afrokk)
