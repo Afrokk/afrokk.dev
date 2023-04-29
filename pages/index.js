@@ -2,6 +2,8 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import Layout from "@/layouts/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 
 const Projects = dynamic(() => import("@/components/Projects"), {
@@ -36,7 +38,7 @@ const Index = () => {
                     based in Canada. &#127809;
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
+                    <a className="px-btn px-btn-theme" href="#contact">
                       Let's talk
                     </a>
                     <a
@@ -60,6 +62,8 @@ const Index = () => {
       </section>
       <About />
       <Projects />
+      <Contact />
+      <Footer />
     </Layout>
   );
 };
