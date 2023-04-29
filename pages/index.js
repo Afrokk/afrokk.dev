@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const Projects = dynamic(() => import("@/components/Projects"), {
   ssr: false,
@@ -53,11 +54,14 @@ const Index = () => {
               </div>
               <div className="col-lg-6">
                 <div className="hb-img d-flex">
-                  <img
+                  <Image
                     className="mx-auto my-auto"
-                    src="static/img/feature-image.png"
+                    width={666}
+                    height={666}
+                    src="/static/img/feature-image.png"
                     title="Me"
                     alt="Afokk Khan"
+                    priority
                   />
                 </div>
               </div>

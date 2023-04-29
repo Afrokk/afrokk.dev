@@ -1,5 +1,6 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const Gallery = dynamic(() => import("./Gallery"), {
   ssr: false,
@@ -9,7 +10,7 @@ const About = () => {
   const resumeData = [
     {
       id: 1,
-      logoSrc: "static/img/thumbs/yt.png",
+      logoSrc: "/static/img/thumbs/yt.png",
       title: "Creative Design Manager",
       company: (
         <a href="https://www.youtube.com/user/XEETECHCARE" target="_blank">
@@ -31,7 +32,7 @@ const About = () => {
     },
     {
       id: 2,
-      logoSrc: "static/img/thumbs/afrokkdesigns.png",
+      logoSrc: "/static/img/thumbs/afrokkdesigns.png",
       title: "Freelancer",
       company: (
         <a href="http://afrokk.design/" target="_blank">
@@ -54,7 +55,7 @@ const About = () => {
     },
     {
       id: 3,
-      logoSrc: "static/img/thumbs/uwindsor.png",
+      logoSrc: "/static/img/thumbs/uwindsor.png",
       title: "Teaching Assistant",
       company: (
         <a
@@ -80,7 +81,7 @@ const About = () => {
     },
     {
       id: 4,
-      logoSrc: "static/img/thumbs/geeksultd.png",
+      logoSrc: "/static/img/thumbs/geeksultd.png",
       title: "Co-Founder",
       company: (
         <a href="https://www.geeksultd.com/" target="_blank">
@@ -128,8 +129,10 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img
-                    src="static/img/about-me.png"
+                  <Image
+                    src="/static/img/about-me.png"
+                    width={500}
+                    height={500}
                     title="An image collage showcasing my favourite hobbies/things."
                     alt="An image collage showcasing my favourite hobbies/things."
                   />
@@ -276,7 +279,12 @@ const About = () => {
               <div className="row">
                 <div className="col-sm-3 col-md-3 col-xl-2">
                   <div className="rb-left">
-                    <img src={experience.logoSrc} alt="logo" />
+                    <Image
+                      src={experience.logoSrc}
+                      alt="logo"
+                      width={350}
+                      height={350}
+                    />
                   </div>
                 </div>
                 <div className="col-sm-9 col-md-9 col-xl-10">

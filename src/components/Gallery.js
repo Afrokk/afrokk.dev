@@ -7,6 +7,7 @@ import SwiperCore, {
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
+import Image from "next/image";
 
 const Gallery = () => {
   const props = {
@@ -33,9 +34,11 @@ const Gallery = () => {
       <Swiper {...props}>
         <SwiperSlide className="gallery media d-flex">
           <div>
-            <img
+            <Image
               className="gallery-img"
-              src="static/img/gallery/csgames.jpg"
+              src="/static/img/gallery/csgames.jpg"
+              width={452.5}
+              height={603}
               title="Me at CS Games 2023"
               alt="Me at CS Games 2023"
             />
@@ -46,9 +49,11 @@ const Gallery = () => {
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
-            <img
+            <Image
               className="gallery-img"
-              src="static/img/gallery/hashcode.jpg"
+              src="/static/img/gallery/hashcode.jpg"
+              width={452.5}
+              height={603}
               title="Google HashCode 2022."
               alt="Google HashCode 2022."
             />
@@ -59,9 +64,13 @@ const Gallery = () => {
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
-            <img
+            <Image
               className="gallery-img"
-              src="static/img/gallery/sony.jpg"
+              width={452.5}
+              height={603}
+              src="/static/img/gallery/sony.jpg"
+              title="Sony A7Siii."
+              alt="A picture of Sony A7Siii."
             />
           </div>
           <div className="media-body gallery-caption">
@@ -70,9 +79,11 @@ const Gallery = () => {
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
-            <img
+            <Image
               className="gallery-img"
-              src="static/img/gallery/setup1.jpg"
+              src="/static/img/gallery/setup1.jpg"
+              width={452.5}
+              height={603}
               title="Desk Setup '23."
               alt="Desk Setup '23."
             />
@@ -83,11 +94,13 @@ const Gallery = () => {
         </SwiperSlide>
         <SwiperSlide className="gallery media d-flex">
           <div>
-            <img
+            <Image
               className="gallery-img"
-              src="static/img/gallery/setup2.jpg"
-              title=""
-              alt=""
+              src="/static/img/gallery/setup2.jpg"
+              width={452.5}
+              height={603}
+              title="PCMR."
+              alt="A close-up picture of PC setup."
             />
           </div>
           <div className="media-body gallery-caption">

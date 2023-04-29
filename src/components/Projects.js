@@ -3,6 +3,7 @@ import Popup from "@/components/Popup";
 import imageUrlBuilder from "@sanity/image-url";
 import { useState, useEffect } from "react";
 import { createClient } from "next-sanity";
+import Image from "next/image";
 
 const Testimonials = dynamic(() => import("./Testimonials"), {
   ssr: false,
@@ -99,9 +100,11 @@ const Projects = () => {
                   onClick={() => handlePopupClick(project)}
                 >
                   <div className="media mx-auto my-auto flex-lg-row flex-column">
-                    <img
+                    <Image
                       src={urlFor(project.image).width(150).url()}
                       alt={project.title}
+                      width={150}
+                      height={150}
                       className="img-fluid mx-auto my-auto order-lg-1 order-1"
                     />
                     <div className="feature-content media-body order-lg-2 order-2">

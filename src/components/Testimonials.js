@@ -7,6 +7,8 @@ import SwiperCore, {
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
+import Image from "next/image";
+
 const Testimonials = () => {
   const props = {
     slidesPerView: 2,
@@ -31,7 +33,12 @@ const Testimonials = () => {
       <Swiper {...props}>
         <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
           <div className="avatar order-md-1 order-1">
-            <img src="static/img/thumbs/testimonial1.jpeg"/>
+            <Image
+              src="/static/img/thumbs/testimonial1.jpeg"
+              alt="Testimonial person image."
+              width={120}
+              height={120}
+            />
           </div>
           <div className="media-body order-md-2 order-2">
             <p className="quote">
@@ -47,7 +54,12 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
           <div className="avatar order-md-1 order-1">
-            <img src="static/img/thumbs/testimonial2.jpeg"/>
+            <Image
+              src="/static/img/thumbs/testimonial2.jpeg"
+              alt="Testimonial person image."
+              width={120}
+              height={120}
+            />
           </div>
           <div className="media-body order-md-2 order-2">
             <p className="quote">

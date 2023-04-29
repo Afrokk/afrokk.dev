@@ -1,5 +1,6 @@
 import useClickOutside from "@/hooks/UseClickOutside";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import "yet-another-react-lightbox/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
@@ -100,9 +101,11 @@ const Popup = ({ open, close, project, urlFor }) => {
             <Swiper {...swiperProps}>
               {project.imageGallery.map((image, idx) => (
                 <SwiperSlide key={idx}>
-                  <img
+                  <Image
                     src={urlFor(image).url()}
                     alt={project.title}
+                    width={689}
+                    height={746.41}
                     onClick={() => setLightboxOpen(true)}
                   />
                 </SwiperSlide>
