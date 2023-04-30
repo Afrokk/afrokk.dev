@@ -25,7 +25,9 @@ const Contact = () => {
                   </li>
                   <li className="media">
                     <i className="ti-email" />
-                    <span className="media-body"><a href="mailto:hi@afrokk.dev">hi@afrokk.dev</a></span>
+                    <span className="media-body">
+                      <a href="mailto:hi@afrokk.dev">hi@afrokk.dev</a>
+                    </span>
                   </li>
                   <li>
                     <div className="contact-icons justify-content-center social-icons">
@@ -64,7 +66,7 @@ const Contact = () => {
                   They say you miss 100% of the shots you don't take - so go
                   ahead and shoot me an email! Whether you have a question,
                   opportunity, project idea, or just want to chat, I'm always
-                  happy to hear from fellow tech enthusiasts. Fill out the form
+                  happy to hear from fellow tech enthusiasts. Click the button
                   below and let's talk! :)
                 </p>
                 <div className="btn-bar contact-cta d-flex">

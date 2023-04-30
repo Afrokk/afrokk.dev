@@ -16,7 +16,7 @@
 
 ## About
 
-My personal developer portfolio built from scratch with React and NextJS. Work in progress.
+My personal developer portfolio built from scratch with React and NextJS. 
 
 
 ## Contact
