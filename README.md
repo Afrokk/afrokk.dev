@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="images/clip.png" alt="Logo" width="315" height="315">
+    <img src="images/thumb.png" alt="Logo" width="315" height="315">
   </a>
 
   <h3 align="center">afrokk.dev</h3>
