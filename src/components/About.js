@@ -40,7 +40,7 @@ const About = () => {
         </a>
       ),
       location: "Remote",
-      date: "Sept 2020 - Nov 2022",
+      date: "Sept 2020 - May 2023",
       time: "Part Time",
       description: (
         <>
