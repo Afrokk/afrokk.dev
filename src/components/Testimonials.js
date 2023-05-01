@@ -15,7 +15,7 @@ const Testimonials = () => {
     spaceBetween: 25,
     loop: true,
     autoplay: {
-      delay: 600000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {
