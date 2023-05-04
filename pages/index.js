@@ -1,15 +1,16 @@
-import ParticlesBackground from "@/components/ParticlesBackground";
-import Layout from "@/layouts/Layout";
-import TypingAnimation from "@/components/TypingAnimation";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-
-const Projects = dynamic(() => import("@/components/Projects"), {
-  ssr: false,
-});
+import Layout from "@/layouts/Layout";
+import ParticlesBackground from "@/components/ParticlesBackground";
+import TypingAnimation from "@/components/TypingAnimation";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Gallery from "@/components/Gallery";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -45,9 +46,10 @@ const Index = () => {
                     <a
                       id="text-btn"
                       className="px-btn px-btn-outline"
-                      href="#about"
+                      href="https://github.com/Afrokk/Afrokk/raw/main/Afrokk_Khan_Resume.pdf"
+                      target="_blank"
                     >
-                      Learn More
+                      Resume
                     </a>
                   </div>
                 </div>
@@ -70,7 +72,12 @@ const Index = () => {
         </div>
       </section>
       <About />
+      
+      <Experience/>
+      <Gallery/>
       <Projects />
+      <Skills />
+      <Testimonials />
       <Contact />
       <Footer />
     </Layout>
