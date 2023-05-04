@@ -58,8 +58,8 @@ const Gallery = () => {
                 src="/static/img/gallery/hashcode.jpg"
                 width={452.5}
                 height={603}
-                title="Google HashCode 2022."
-                alt="Google HashCode 2022."
+                title="Google HashCode."
+                alt="Google HashCode."
               />
             </div>
             <div className="media-body gallery-caption">
