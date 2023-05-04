@@ -20,7 +20,7 @@ const Contact = () => {
                 </p>
                 <ul>
                   <li className="media">
-                    <i className="fa fa-map-marker" />
+                    <i className="ti-map-alt" />
                     <span className="media-body">Canada</span>
                   </li>
                   <li className="media">

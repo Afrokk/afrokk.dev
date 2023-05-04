@@ -5,10 +5,6 @@ import { useState, useEffect } from "react";
 import { createClient } from "next-sanity";
 import Image from "next/image";
 
-const Testimonials = dynamic(() => import("./Testimonials"), {
-  ssr: false,
-});
-
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
@@ -153,9 +149,8 @@ const Projects = () => {
               </button>
             )}
           </div>
-          <div className="separated" />
-          <Testimonials />
         </div>
+        <div className="separated" />
       </section>
     </>
   );
