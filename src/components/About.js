@@ -41,10 +41,6 @@ const About = () => {
                   have a strong passion for UI/UX design, fueled by my over 5
                   years of experience in Graphics Design and Content Creation.
                 </p>
-                <h5>
-                  Looking for opportunities where I can grow and jump on
-                  opposite sides of the stack.&#9889;
-                </h5>
                 <div className="about-icons justify-content-center social-icons">
                   <a href="https://github.com/Afrokk" target="_blank">
                     <i className="fab fa-github" />
