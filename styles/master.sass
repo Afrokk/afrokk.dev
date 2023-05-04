@@ -43,7 +43,8 @@
 		background: $px-white
 
 .section
-	padding: 100px 0
+	padding: 0px 0
+	padding-bottom: 0px
 	@include down-sm
 		padding-bottom: 60px
 
@@ -113,6 +114,9 @@
 	padding-top: 80px
 	padding-bottom: 80px
 	position: relative
+	background-color: $px-bg-1
+	.theme-light &
+		background-color: $px-white
 	&:after
 		content: ""
 		position: absolute
@@ -636,6 +640,9 @@
 		margin-left: 5px
 		vertical-align: -0.4em
 
+#experience
+	padding-top: 0px
+
 .resume-box
 	display: inline-block
 	vertical-align: top
@@ -727,6 +734,11 @@
 			color: $px-white
 			.theme-light &
 				color: $px-dark
+
+.skills
+	background-color: $px-bg-1
+	.theme-light &
+		background-color: $px-white
 
 .skills-box
 	h3
