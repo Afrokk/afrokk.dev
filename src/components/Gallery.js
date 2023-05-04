@@ -30,88 +30,94 @@ const Gallery = () => {
     },
   };
   return (
-    <>
-      <Swiper {...props}>
-        <SwiperSlide className="gallery media d-flex">
-          <div>
-            <Image
-              className="gallery-img"
-              src="/static/img/gallery/csgames.jpg"
-              width={452.5}
-              height={603}
-              title="Me at CS Games 2023"
-              alt="Me at CS Games 2023"
-            />
-          </div>
-          <div className="media-body gallery-caption">
-            <p>At CS Games 2023, in UQAC, Quebec, representing the University of Windsor.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="gallery media d-flex">
-          <div>
-            <Image
-              className="gallery-img"
-              src="/static/img/gallery/hashcode.jpg"
-              width={452.5}
-              height={603}
-              title="Google HashCode 2022."
-              alt="Google HashCode 2022."
-            />
-          </div>
-          <div className="media-body gallery-caption">
-            <p>Google HashCode 2022.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="gallery media d-flex">
-          <div>
-            <Image
-              className="gallery-img"
-              width={452.5}
-              height={603}
-              src="/static/img/gallery/sony.jpg"
-              title="Sony A7Siii."
-              alt="A picture of Sony A7Siii."
-            />
-          </div>
-          <div className="media-body gallery-caption">
-            <p>Occasionally, I review tech.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="gallery media d-flex">
-          <div>
-            <Image
-              className="gallery-img"
-              src="/static/img/gallery/setup1.jpg"
-              width={452.5}
-              height={603}
-              title="Desk Setup '23."
-              alt="Desk Setup '23."
-            />
-          </div>
-          <div className="media-body gallery-caption">
-            <p>Desk Setup '23.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="gallery media d-flex">
-          <div>
-            <Image
-              className="gallery-img"
-              src="/static/img/gallery/setup2.jpg"
-              width={452.5}
-              height={603}
-              title="PCMR."
-              alt="A close-up picture of PC setup."
-            />
-          </div>
-          <div className="media-body gallery-caption">
-            <p>PCMR.</p>
-          </div>
-        </SwiperSlide>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
-      </Swiper>
-      <div className="owl-dots"></div>
-    </>
+    <div className="pp-section pp-scrollable section counter">
+      <div className="container">
+        <Swiper {...props}>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                src="/static/img/gallery/csgames.jpg"
+                width={452.5}
+                height={603}
+                title="Me at CS Games 2023"
+                alt="Me at CS Games 2023"
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>
+                At CS Games 2023, in UQAC, Quebec, representing the University
+                of Windsor.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                src="/static/img/gallery/hashcode.jpg"
+                width={452.5}
+                height={603}
+                title="Google HashCode 2022."
+                alt="Google HashCode 2022."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>Google HashCode 2022.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                width={452.5}
+                height={603}
+                src="/static/img/gallery/sony.jpg"
+                title="Sony A7Siii."
+                alt="A picture of Sony A7Siii."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>Occasionally, I review tech.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                src="/static/img/gallery/setup1.jpg"
+                width={452.5}
+                height={603}
+                title="Desk Setup '23."
+                alt="Desk Setup '23."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>Desk Setup '23.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                src="/static/img/gallery/setup2.jpg"
+                width={452.5}
+                height={603}
+                title="PCMR."
+                alt="A close-up picture of PC setup."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>PCMR.</p>
+            </div>
+          </SwiperSlide>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </Swiper>
+        <div className="owl-dots"></div>
+      </div>
+      <div className="separated"></div>
+    </div>
   );
 };
 export default Gallery;
