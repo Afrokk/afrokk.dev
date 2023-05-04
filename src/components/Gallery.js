@@ -63,7 +63,7 @@ const Gallery = () => {
               />
             </div>
             <div className="media-body gallery-caption">
-              <p>Google HashCode 2022.</p>
+              <p>Google HashCode.</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
