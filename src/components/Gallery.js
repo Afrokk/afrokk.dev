@@ -113,8 +113,8 @@ const Gallery = () => {
           </SwiperSlide>
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>
+          <div className="owl-dots"></div>
         </Swiper>
-        <div className="owl-dots"></div>
       </div>
       <div className="separated"></div>
     </div>
