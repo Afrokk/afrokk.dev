@@ -52,7 +52,7 @@ const Experience = () => {
           <ul>
             <li>
               <b>Crafted websites</b> for different clients using{" "}
-              <b>JavaScript</b>, <b>React</b>,<b>Shopify</b>, and more.
+              <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>, and more.
             </li>
             <li>
               Designed <b>over 800 photorealistic renders</b> of upcoming tech
