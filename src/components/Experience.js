@@ -17,11 +17,17 @@ const Experience = () => {
       time: "Part Time",
       description: (
         <>
-          Directing a <b>1.7 million subscribers</b> tech YouTube channel. I
-          help create tech content for a global audience while managing multiple
-          brands like <b>Samsung</b>, <b>NordVPN</b>, <b>Anker</b> and more. My
-          SEO strategies have{" "}
-          <b>boosted views from high CPM regions by up to 40%</b>.
+          <ul>
+            <li>Directing a <b>1.7 million subscribers</b> tech YouTube channel.</li>
+            <li>
+              I help create <b>tech</b> content for a <b>global audience</b> while managing
+              multiple brands like <b>Samsung</b>, <b>NordVPN</b>, <b>Anker</b> and more.
+            </li>
+            <li>
+              Implemented <b>SEO</b> strategies to <b>boost views</b> from high CPM regions by
+              up to <b>40%</b>.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -39,12 +45,20 @@ const Experience = () => {
       time: "Part Time",
       description: (
         <>
-          Created websites for different clients ranging from small businesses
-          to YouTubers, using <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>,
-          and more. Designed over <b>800</b> photorealistic renders of upcoming
-          tech as a self-taught independent freelancer. Lastly, I did product
-          photography for various clients including <b>BestBuy</b>, <b>Oppo</b>{" "}
-          and <b>Cornershop by Uber</b>.
+          <ul>
+            <li>
+              <b>Crafted websites</b> for different clients using{" "}
+              <b>JavaScript</b>, <b>React</b>,<b>Shopify</b>, and more.
+            </li>
+            <li>
+              Designed <b>over 800 photorealistic renders</b> of upcoming tech
+              as a <b>self-taught</b> independent freelancer.{" "}
+            </li>
+            <li>
+              Did <b>product photography</b> for various clients including{" "}
+              <b>BestBuy</b>, <b>Oppo</b> and <b>Cornershop by Uber</b>.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -65,12 +79,22 @@ const Experience = () => {
       time: "Part Time",
       description: (
         <>
-          <b>Mentored 100+ students</b> in three Computer Science courses,
-          providing study guides, proctoring exams, and addressing queries.{" "}
-          <b>Conducted engaging workshops</b> for a large cohort{" "}
-          <b>200+ students</b> on programming tools such as <b>C</b>, <b>SQL</b>
-          , and <b>OSs</b>, including <b>multithreading</b> and{" "}
-          <b>network socket</b> concepts.
+          <ul>
+            <li>
+              <b>Mentored 100+ students</b> in <b>three</b> Computer Science
+              courses.
+            </li>
+            <li>
+              Provided study guides, proctored exams, and addressed student
+              queries.
+            </li>
+            <li>
+              Conducted engaging workshops for a large cohort <b>200+</b>{" "}
+              students on programming tools such as <b>C</b>, <b>SQL</b>,{" "}
+              <b>Operating System programming</b> and
+              <b>multithreading</b> concepts.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -88,13 +112,23 @@ const Experience = () => {
       time: "Part Time",
       description: (
         <>
-          Spearheaded GeeksULTD.COM, a <b>tech/gaming website</b> for{" "}
-          <b>2+ years</b>, publishing over <b>550</b> articles, reviews, and
-          editorials on computers, tech, and gaming. Collaborated with brands
-          like Samsung, Logitech, and MSi to publish <b>30+</b> product reviews.
-          I accelerated website load times by <b>optimizing JavaScript & CSS</b>{" "}
-          files and integrating CDN technologies like <b>Cloudflare</b> and{" "}
-          <b>BunnyCDN</b>, resulting in up to <b>2x faster</b> load times.
+          <ul>
+            <li>
+              Spearheaded <b>GeeksULTD.COM</b>, a <b>tech/gaming website</b> for{" "}
+              <b>2+ years</b>.
+            </li>
+            <li>
+              Published <b>500+</b> articles, reviews and editorials.
+            </li>
+            <li>
+              <b>Collaborated with tech brands</b> like Asus, Logitech and MSi
+              to <b>publish 30+ reviews</b>.
+            </li>
+            <li>
+              Achieved <b>2x faster load speeds</b> by optimizing JavaScript &
+              CSS and <b>integrating CDN technologies</b>.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -145,7 +179,7 @@ const Experience = () => {
                         {experience.date}
                       </label>
                       <div className="rb-time">{experience.time}</div>
-                      <p>{experience.description}</p>
+                      {experience.description}
                     </div>
                   </div>
                 </div>
