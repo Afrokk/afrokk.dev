@@ -18,14 +18,18 @@ const Experience = () => {
       description: (
         <>
           <ul>
-            <li>Directing a <b>1.7 million subscribers</b> tech YouTube channel.</li>
             <li>
-              I help create <b>tech</b> content for a <b>global audience</b> while managing
-              multiple brands like <b>Samsung</b>, <b>NordVPN</b>, <b>Anker</b> and more.
+              Directing a <b>1.7 million subscribers</b> tech YouTube channel,
+              creating content for a <b>global audience</b>.
             </li>
             <li>
-              Implemented <b>SEO</b> strategies to <b>boost views</b> from high CPM regions by
-              up to <b>40%</b>.
+              Implemented <b>SEO</b> strategies to <b>boost views</b> from high
+              CPM regions by up to <b>40%</b>.
+            </li>
+            <li>
+              <b>Collaborating</b> with <b>industry-leading brands</b> like
+              Samsung, NordVPN, Anker and more to{" "}
+              <b>create high-quality content</b> and integrations.
             </li>
           </ul>
         </>
@@ -89,9 +93,9 @@ const Experience = () => {
               queries.
             </li>
             <li>
-              Conducted engaging workshops for a large cohort <b>200+</b>{" "}
-              students on programming tools such as <b>C</b>, <b>SQL</b>,{" "}
-              <b>Operating System programming</b> and
+              <b>Conducted</b> engaging <b>workshops</b> for a large cohort{" "}
+              <b>200+ students</b> on programming tools such as <b>C</b>,{" "}
+              <b>SQL</b>, <b>Operating System programming</b> and{" "}
               <b>multithreading</b> concepts.
             </li>
           </ul>
