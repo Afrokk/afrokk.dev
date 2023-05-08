@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Layout from "@/layouts/Layout";
 import ParticlesBackground from "@/components/ParticlesBackground";
