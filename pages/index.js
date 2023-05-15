@@ -34,7 +34,7 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    I'm an aspiring Full-Stack Software Engineer with a passion
+                    I'm a Full-Stack Software Engineer with a passion
                     for developing clean, functional applications. Currently
                     based in Canada. &#127809;
                   </p>
@@ -70,8 +70,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <About />
-      
+      <About />     
       <Experience/>
       <Gallery/>
       <Projects />
