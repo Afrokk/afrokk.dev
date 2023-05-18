@@ -36,20 +36,17 @@ const Skills = () => {
                   optimized applications with strong emphasis on good UI/UX
                   design.
                 </p>
+                <p>
+                  I am <b>language-agnostic</b>, however, I have worked with
+                  several technologies and frameworks during my time freelancing
+                  and on personal projects. These include C, Java,
+                  JavaScript/TypeScript, Python, and more.
+                </p>
                 <div className="row">
                   <div className="col-md-6">
-                    <h5>Languages</h5>
-                    <ul>
-                      <li>C</li>
-                      <li>Java</li>
-                      <li>HTML/CSS</li>
-                      <li>JavaScript</li>
-                      <li>TypeScript</li>
-                      <li>Python</li>
-                    </ul>
                     <h5>Databases</h5>
                     <ul>
-                      <li>Relational Databases (PostgreSQL)</li>
+                      <li>Relational Databases (PostgreSQL, MySQL)</li>
                       <li>MongoDB</li>
                     </ul>
                     <h5>Design</h5>
@@ -63,8 +60,7 @@ const Skills = () => {
                     <ul>
                       <li>React</li>
                       <li>Next.js</li>
-                      <li>Node</li>
-                      <li>Express</li>
+                      <li>Node/Express</li>
                       <li>Flask</li>
                       <li>SASS/SCSS</li>
                     </ul>
