@@ -757,6 +757,9 @@
 	p
 		padding-bottom: 10px
 
+	b
+		color: white
+
 .skill-lt
 	position: relative
 	span
@@ -779,24 +782,11 @@
 		.theme-light &
 			color: $px-dark
 
-	.skill-bar
-		position: relative
-		background: rgba($px-white, .2)
-		.theme-light &
-			background: rgba($px-dark, .1)
-
-		.skill-bar-in
-			width: 80px
-			position: relative
-			@include transition(ease all 0.55s)
-			height: 5px
-			background: $px-theme
-
 .education-box
 	margin: 0
 	padding: 0
-	background: $px-dark
 	list-style: none
+	background: $px-bg-3
 	.theme-light &
 		background: $px-gray
 
