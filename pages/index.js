@@ -34,12 +34,14 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    I'm a Full-Stack Software Engineer with a passion
-                    for developing clean, functional applications. Currently
-                    based in Canada. &#127809;
+                    Upcoming Software Engineering Grad with 7 years of
+                    experience in the tech industry, managing a ~2M subs YT
+                    channel, former founder of a tech news website, and an avid
+                    freelancer with works featured in Forbes, Uber, and more.
+                    Currently based in Canada. &#127809;
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#contact">
+                    <a className="px-btn px-btn-theme" href="https://calendly.com/afrokk">
                       Let's talk
                     </a>
                     <a
@@ -70,9 +72,9 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <About />     
-      <Experience/>
-      <Gallery/>
+      <About />
+      <Experience />
+      <Gallery />
       <Projects />
       <Skills />
       <Testimonials />
