@@ -76,6 +76,12 @@ const Contact = () => {
                   >
                     Send me an Email <i className="fa fa-envelope"></i>
                   </a>
+                  <a
+                    className="px-btn px-btn-theme mx-auto my-auto"
+                    href="https://calendly.com/afrokk"
+                  >
+                    Schedule a Meeting <i className="fa fa-calendar"></i>
+                  </a>
                 </div>
               </div>
             </div>
