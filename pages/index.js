@@ -41,7 +41,11 @@ const Index = () => {
                     Currently based in Canada. &#127809;
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="https://calendly.com/afrokk">
+                    <a
+                      className="px-btn px-btn-theme"
+                      href="https://calendly.com/afrokk"
+                      target="_blank"
+                    >
                       Let's talk
                     </a>
                     <a
