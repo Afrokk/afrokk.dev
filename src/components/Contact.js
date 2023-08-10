@@ -64,20 +64,19 @@ const Contact = () => {
                 <h4>Reach out to me.</h4>
                 <p>
                   They say you miss 100% of the shots you don't take - so go
-                  ahead and shoot me an email! Whether you have a question,
+                  ahead and shoot me an email or schedule a meeting! Whether you have a question,
                   opportunity, project idea, or just want to chat, I'm always
-                  happy to hear from fellow tech enthusiasts. Click the button
-                  below and let's talk! :)
+                  happy to hear from fellow tech enthusiasts. Let's talk! :)
                 </p>
                 <div className="btn-bar contact-cta d-flex">
                   <a
-                    className="px-btn px-btn-theme mx-auto my-auto"
+                    className="px-btn px-btn-theme"
                     href="mailto:hi@afrokk.dev"
                   >
                     Send me an Email <i className="fa fa-envelope"></i>
                   </a>
                   <a
-                    className="px-btn px-btn-theme mx-auto my-auto"
+                    className="px-btn px-btn-theme"
                     href="https://calendly.com/afrokk"
                   >
                     Schedule a Meeting <i className="fa fa-calendar"></i>
