@@ -32,7 +32,30 @@ const Gallery = () => {
   return (
     <div className="pp-section pp-scrollable section counter">
       <div className="container">
+        <div className="title">
+          <h3>Hackathons & Gallery</h3>
+        </div>
+      </div>
+      <div className="container">
         <Swiper {...props}>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
+                src="/static/img/gallery/spaceapps.jpeg"
+                width={452.5}
+                height={603}
+                title="Me with Team JavaLoungePresidents at NASA Space Apps 2023"
+                alt="Me with Team JavaLoungePresidents at NASA Space Apps 2023"
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>
+                1st place @ NASA Space Apps 2023 Regional for BlazeGuard (Team
+                JavaLoungePresidents)
+              </p>
+            </div>
+          </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
             <div>
               <Image
@@ -46,8 +69,8 @@ const Gallery = () => {
             </div>
             <div className="media-body gallery-caption">
               <p>
-                At CS Games 2023, in UQAC, Quebec, representing the University
-                of Windsor.
+                At CS Games 2023, in UQAC, Quebec - 4th Place Full-Stack
+                Development (uWindsor Team B).
               </p>
             </div>
           </SwiperSlide>
