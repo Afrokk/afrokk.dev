@@ -19,17 +19,17 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Directing a <b>1.7 million subscribers</b> tech YouTube channel,
-              creating content for a <b>global audience</b>.
+              Directed a <b>1.7 million subscribers</b> tech YouTube channel,
+              creating tech content for a <b>global audience</b>.
             </li>
             <li>
-              Implemented <b>SEO</b> strategies to <b>boost views</b> from high
-              CPM regions by up to <b>40%</b>.
+              Managed renowned brands including <b>Samsung</b>, <b>Google</b>,{" "}
+              <b>Chevrolet</b>, and <b>more</b> across diverse industries.
             </li>
             <li>
-              <b>Collaborating</b> with <b>industry-leading brands</b> like
-              Samsung, NordVPN, Anker and more to{" "}
-              <b>create high-quality content</b> and integrations.
+              Produced over <b>500</b> videos of current tech, ranging from{" "}
+              <b>smartphones</b>, <b>custom PCs</b>, and{" "}
+              <b>electric vehicles</b>.
             </li>
           </ul>
         </>
@@ -37,6 +37,44 @@ const Experience = () => {
     },
     {
       id: 2,
+      logoSrc: "/static/img/thumbs/uwindsor.png",
+      title: "Teaching Assistant",
+      company: (
+        <a
+          href="https://www.uwindsor.ca/science/computerscience/"
+          target="_blank"
+        >
+          uWindsor School of Computer Science
+        </a>
+      ),
+      location: "Windsor, ON",
+      date: "Jan 2022 - Present",
+      time: "Part Time",
+      description: (
+        <>
+          <ul>
+            <li>
+              <b>Mentored 100+ students</b> in <b>four</b> major Computer
+              Science courses including <b>C</b>,{" "}
+              <b>Object Oriented Programming with Java</b> and{" "}
+              <b>Operating Systems Programming</b>.
+            </li>
+            <li>
+              <b>Conducted</b> engaging <b>workshops</b> for a large cohort{" "}
+              <b>200+ students</b> on programming tools such as <b>C</b>,{" "}
+              <b>SQL</b>, <b>Operating System programming</b> and{" "}
+              <b>multithreading</b> concepts.
+            </li>
+            <li>
+              Provided study guides, proctored exams, and addressed student
+              queries.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: 3,
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
       title: "Freelancer",
       company: (
@@ -56,47 +94,11 @@ const Experience = () => {
             </li>
             <li>
               Designed <b>over 800 photorealistic renders</b> of upcoming tech
-              as a <b>self-taught</b> independent freelancer.{" "}
+              as a self-taught independent freelancer.{" "}
             </li>
             <li>
               Did <b>product photography</b> for various clients including{" "}
               <b>BestBuy</b>, <b>Oppo</b> and <b>Cornershop by Uber</b>.
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      id: 3,
-      logoSrc: "/static/img/thumbs/uwindsor.png",
-      title: "Teaching Assistant",
-      company: (
-        <a
-          href="https://www.uwindsor.ca/science/computerscience/"
-          target="_blank"
-        >
-          uWindsor School of Computer Science
-        </a>
-      ),
-      location: "Windsor, ON",
-      date: "Jan 2022 - May 2023",
-      time: "Part Time",
-      description: (
-        <>
-          <ul>
-            <li>
-              <b>Mentored 100+ students</b> in <b>three</b> Computer Science
-              courses.
-            </li>
-            <li>
-              Provided study guides, proctored exams, and addressed student
-              queries.
-            </li>
-            <li>
-              <b>Conducted</b> engaging <b>workshops</b> for a large cohort{" "}
-              <b>200+ students</b> on programming tools such as <b>C</b>,{" "}
-              <b>SQL</b>, <b>Operating System programming</b> and{" "}
-              <b>multithreading</b> concepts.
             </li>
           </ul>
         </>
@@ -118,15 +120,15 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Spearheaded <b>GeeksULTD.COM</b>, a <b>tech/gaming website</b> for{" "}
-              <b>2+ years</b>.
+              Established and piloted <b>GeeksULTD.COM</b>, a{" "}
+              <b>tech/gaming website</b> for <b>3 years</b>.
             </li>
             <li>
-              Published <b>500+</b> articles, reviews and editorials.
+              Published <b>500+</b> articles, reviews and editorials on tech.
             </li>
             <li>
               <b>Collaborated with tech brands</b> like Asus, Logitech and MSi
-              to <b>publish 30+ reviews</b>.
+              to <b>publish 30+ reviews</b>, viewed <b>globally</b>.
             </li>
             <li>
               Achieved <b>2x faster load speeds</b> by optimizing JavaScript &
