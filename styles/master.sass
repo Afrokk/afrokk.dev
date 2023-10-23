@@ -181,7 +181,7 @@
 		img
 			width: auto 
 			height: auto 
-			border: 3px solid $px-theme
+			border: none
 			border-radius: 50%
 			opacity: 0.96
 			@include up-md
@@ -831,7 +831,7 @@
 				border-top: 1px solid rgba($px-dark, 0.5)
 
 #contact
-	padding-bottom: 350px
+	padding-bottom: 200px
 	background-color: $px-bg-1
 	.theme-light &
 		background-color: $px-white
@@ -844,8 +844,8 @@
 
 .contact-info
 	background: $px-dark
-	padding: 30px
-	height: 350px
+	padding-top: 30px
+	height: 300px
 	.theme-light &
 		background: $px-gray
 
@@ -856,9 +856,6 @@
 		margin-bottom: 20px
 		.theme-light &
 			color: $px-dark
-
-	p
-		font-size: 16px
 
 	ul
 		margin: 0
@@ -895,10 +892,7 @@
 		margin-bottom: 20px
 
 	@include custom-breakpoint(1400px)
-		height: 385px
-
-	@include down-md
-		height: auto
+		height: 300px
 
 	@include custom-breakpoint(384px)
 		padding: 30px
@@ -932,7 +926,7 @@
 .contact-form
 	background: $px-dark
 	padding: 30px
-	height: 350px
+	height: 300px
 	.theme-light &
 		background: $px-gray
 
@@ -953,34 +947,35 @@
 				width: auto
 				height: auto
 
+			a i 
+				font-size: 18px
+				
 			&:last-child
-				margin-right: 0	
+				margin-right: 0 	
 
 	@include custom-breakpoint(1400px)
-		height: 385px
+		height: 300px
 		.contact-cta
-			padding-top: 55px
+			padding-top: 0px
+			a i 
+				font-size: 32px
 
-	@include down-lg
+	@include custom-breakpoint(991px)
+		height: 300px
 		.contact-cta
 			flex-direction: column
-			align-items: center
-			padding: 20px
+			a 
+				margin: 10px auto
+			a i
+				font-size: 18px
 	
-		a
-			text-align: center
-			width: 80%
-			height: auto
-		a:first-child
-			margin-bottom: 35px
-		
-	@include down-sm
-		height: auto
-
-	@include custom-breakpoint(430px)
+	@include custom-breakpoint(768px)
 		.contact-cta
 			a i 
-				display: none
+				font-size: 20px
+
+	@include down-sm
+		height: auto
 
 	@include custom-breakpoint(384px)
 		padding: 30px
@@ -998,7 +993,7 @@
 			a i 
 				display: none
 
-	@include custom-breakpoint(290px)
+	@include custom-breakpoint(320px)
 		padding: 15px
 		.contact-cta
 			a
@@ -1007,7 +1002,7 @@
 				font-size: 10px
 
 .contact-cta
-	padding-top: 50px
+	padding-top: 20px
 	padding-bottom: 20px
 
 .feature-box-01:hover .tag-cloud

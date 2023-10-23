@@ -10,14 +10,10 @@ const Contact = () => {
           <h3>Contact me.</h3>
         </div>
         <div className="row">
-          <div className="col-lg-5 col-xl-4 m-15px-tb">
-            <div className="contact-info d-flex">
+          <div className="col-md-5 col-lg-4">
+            <div className="contact-info p-5">
               <div className="mx-auto">
                 <h4>Let's connect.</h4>
-                <p>
-                  Whether you want to talk shop, share memes, or debate the best
-                  coding languages, I'm all ears.
-                </p>
                 <ul>
                   <li className="media">
                     <i className="ti-map-alt" />
@@ -58,26 +54,21 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-xl-8 m-15px-tb">
-            <div className="contact-form d-flex">
+          <div className="col-md-7 col-lg-8">
+            <div className="contact-form p-5">
               <div>
                 <h4>Reach out to me.</h4>
-                <p>
-                  They say you miss 100% of the shots you don't take - so go
-                  ahead and shoot me an email or schedule a meeting! Whether you have a question,
-                  opportunity, project idea, or just want to chat, I'm always
-                  happy to hear from fellow tech enthusiasts. Let's talk! :)
-                </p>
-                <div className="btn-bar contact-cta d-flex">
+                <div className="btn-bar d-flex contact-cta">
                   <a
-                    className="px-btn px-btn-theme"
+                    className="px-btn px-btn-theme m-lg-3"
                     href="mailto:hi@afrokk.dev"
                   >
                     Send me an Email <i className="fa fa-envelope"></i>
                   </a>
                   <a
-                    className="px-btn px-btn-theme"
+                    className="px-btn px-btn-theme mr-lg-0 m-lg-3"
                     href="https://calendly.com/afrokk"
+                    target="_blank"
                   >
                     Schedule a Meeting <i className="fa fa-calendar"></i>
                   </a>
