@@ -26,7 +26,7 @@ const Index = () => {
               <div className="col-lg-6">
                 <div className="type-box">
                   <h6>Hello &#128075;, I'm</h6>
-                  <h1 className="font-alt">Afrokk Khan.</h1>
+                  <h1 className="font-alt">Afrasiyab.</h1>
                   <p className="lead">
                     A passionate{" "}
                     <span>
@@ -65,7 +65,7 @@ const Index = () => {
                     className="mx-auto my-auto"
                     width={666}
                     height={666}
-                    src="/static/img/feature-image.png"
+                    src="/static/img/feature-img.png"
                     title="Me"
                     alt="Afokk Khan"
                     priority
