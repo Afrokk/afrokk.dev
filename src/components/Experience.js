@@ -19,17 +19,18 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Directed a <b>1.7 million subscribers</b> tech YouTube channel,
-              creating tech content for a <b>global audience</b>.
+              Directed a thriving <b>1.7 million subscribers</b> YouTube channel
+              to produce <b>tech content</b> for a worldwide audience.
             </li>
             <li>
               Managed renowned brands including <b>Samsung</b>, <b>Google</b>,{" "}
-              <b>Chevrolet</b>, and <b>more</b> across diverse industries.
+              <b>Chevrolet</b>, and more across diverse sectors.
             </li>
             <li>
-              Produced over <b>500</b> videos of current tech, ranging from{" "}
-              <b>smartphones</b>, <b>custom PCs</b>, and{" "}
-              <b>electric vehicles</b>.
+              Produced a content library of <b>over 2,000 videos</b> showcasing
+              the latest in technology, spanning <b>smartphones</b>,{" "}
+              <b>computers</b>, and <b>electric vehicles</b>, garnering an
+              impressive <b>5 million</b> monthly views.
             </li>
           </ul>
         </>
@@ -48,7 +49,7 @@ const Experience = () => {
         </a>
       ),
       location: "Windsor, ON",
-      date: "Jan 2022 - Present",
+      date: "Jan 2022 - Dec 2023",
       time: "Part Time",
       description: (
         <>
@@ -76,7 +77,7 @@ const Experience = () => {
     {
       id: 3,
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
-      title: "Freelancer",
+      title: "Freelance",
       company: (
         <a href="http://afrokk.design/" target="_blank">
           AfrokkDesigns

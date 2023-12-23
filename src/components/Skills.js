@@ -10,7 +10,7 @@ const Skills = () => {
             <div className="col-lg-4 m-15px-tb">
               <ul className="education-box">
                 <li>
-                  <span>2021-Present</span>
+                  <span>2023</span>
                   <h6>Bachelor's in Computer Science</h6>
                   <p>University of Windsor</p>
                 </li>

@@ -34,11 +34,11 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    Upcoming Software Engineering Grad with 7 years of
-                    experience in the tech industry, managing a ~2M subs YT
-                    channel, former founder of a tech news website, and an avid
-                    freelancer with works featured in Forbes, Uber, and more.
-                    Currently based in Canada. &#127809;
+                    Software Engineering Grad with 7 years of experience in the
+                    tech industry, managing a ~2M subs YT channel, former
+                    founder of a tech news website, and an avid freelancer with
+                    works featured in Forbes, Uber, and more. Currently based in
+                    Canada. &#127809;
                   </p>
                   <div className="btn-bar">
                     <a
