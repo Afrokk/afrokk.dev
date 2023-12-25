@@ -30,7 +30,7 @@ const Gallery = () => {
     },
   };
   return (
-    <div className="pp-section pp-scrollable section counter">
+    <div id="hackathons" className="pp-section pp-scrollable section counter">
       <div className="container">
         <div className="title">
           <h3>Hackathons & Gallery</h3>

@@ -1,7 +1,10 @@
 const Skills = () => {
   return (
     <>
-      <section className="pp-section pp-scrollable section counter">
+      <section
+        id="education"
+        className="pp-section pp-scrollable section counter"
+      >
         <div className="container skills">
           <div className="title">
             <h3>Education &amp; Skills.</h3>
@@ -15,7 +18,7 @@ const Skills = () => {
                   <p>University of Windsor</p>
                 </li>
                 <li>
-                  <span>2023</span>
+                  <span>2022</span>
                   <h6>Full-Stack Development</h6>
                   <p>Colt Steele's Bootcamp</p>
                 </li>
@@ -29,13 +32,6 @@ const Skills = () => {
             <div className="col-lg-7 ml-auto m-15px-tb">
               <div className="skills-box">
                 <h3>My skills</h3>
-                <p>
-                  With a solid, growing foundation in both frontend and backend
-                  technologies, I try to bring a comprehensive skill set to
-                  tackle various development projects and develop highly
-                  optimized applications with strong emphasis on good UI/UX
-                  design.
-                </p>
                 <p>
                   I am <b>language-agnostic</b>, however, I have worked with
                   several technologies and frameworks during my time freelancing
@@ -58,8 +54,8 @@ const Skills = () => {
                   <div className="col-md-6">
                     <h5>Frameworks</h5>
                     <ul>
-                      <li>React</li>
-                      <li>Next.js</li>
+                      <li>React/Next.js</li>
+                      <li>Vue.js/Nuxt</li>
                       <li>Node/Express</li>
                       <li>Flask</li>
                       <li>SASS/SCSS</li>
