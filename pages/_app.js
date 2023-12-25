@@ -19,9 +19,12 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="An upcoming Software Engineer at the University of Windsor fueled by a passion for creating cutting-edge solutions. Welcome to my portfolio."
+          content="Software Engineering grad at the University of Windsor fueled by a passion for creating cutting-edge solutions. Welcome to my portfolio."
         />
-        <meta name="keywords" content="Developer, Portfolio, React, web, development, JavaScript, front-end, back-end, full-stack"/>
+        <meta
+          name="keywords"
+          content="Developer, Portfolio, React, web, development, JavaScript, front-end, back-end, full-stack"
+        />
       </Head>
       {load && <PreLoader />}
       <Component {...pageProps} />
