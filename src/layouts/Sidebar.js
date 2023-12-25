@@ -99,10 +99,22 @@ const MenuWithOutBlog = () => {
           <span>Experience</span>
         </a>
       </li>
+      <li data-menuanchor="hackathons">
+        <a className="nav-link" href="#hackathons">
+          <i className="ti-cup" />
+          <span>Hackathons</span>
+        </a>
+      </li>
       <li data-menuanchor="projects">
         <a className="nav-link" href="#projects">
-          <i className="ti-panel" />
+          <i className="ti-rocket" />
           <span>Projects</span>
+        </a>
+      </li>
+      <li data-menuanchor="education">
+        <a className="nav-link" href="#education">
+          <i className="ti-agenda" />
+          <span>Education</span>
         </a>
       </li>
       <li data-menuanchor="contact">
@@ -112,49 +124,5 @@ const MenuWithOutBlog = () => {
         </a>
       </li>
     </ul>
-  );
-};
-
-const MenuWithBlog = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", () =>
-      document.querySelector(".blog").classList.add("active")
-    );
-  });
-  return (
-    <>
-      <ul className="nav nav-menu" id="pp-menu">
-        <li data-menuanchor="home">
-          <Link href="/#home" className="nav-link">
-            <i className="ti-home" />
-            <span>Home</span>
-          </Link>
-        </li>
-        <li data-menuanchor="about">
-          <Link href="/#about" className="nav-link">
-            <i className="ti-id-badge" />
-            <span>About Me</span>
-          </Link>
-        </li>
-        <li data-menuanchor="projects">
-          <Link href="/#projects" className="nav-link">
-            <i className="ti-panel" />
-            <span>Projects</span>
-          </Link>
-        </li>
-        <li data-menuanchor="blog" className="blog active">
-          <Link href="/#blog" className="nav-link">
-            <i className="ti-layout-media-overlay-alt-2" />
-            <span>Blog</span>
-          </Link>
-        </li>
-        <li data-menuanchor="contactus">
-          <Link href="/#contactus" className="nav-link">
-            <i className="ti-map-alt" />
-            <span>Contact</span>
-          </Link>
-        </li>
-      </ul>
-    </>
   );
 };
