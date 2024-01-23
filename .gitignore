@@ -3,3 +3,6 @@
 .swc/
 .*.env
 .env.local
+.env
+sanity/sanity.config.ts
+sanity/sanity.cli.ts

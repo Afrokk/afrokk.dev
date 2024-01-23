@@ -1,1 +1,1 @@
-# Using Sanity as a Headless CMS.
+### Using Sanity as a headless CMS.

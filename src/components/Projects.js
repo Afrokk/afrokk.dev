@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import Popup from "@/components/Popup";
 import imageUrlBuilder from "@sanity/image-url";
 import { useState, useEffect } from "react";
@@ -65,26 +64,25 @@ const Projects = () => {
         urlFor={urlFor}
       />
       <section
-        id="projects"
         data-nav-tooltip="projects"
         className="pp-section pp-scrollable section"
       >
         <div className="container">
-          <div className="title project-section-title">
+          <div className="title project-section-title" id="projects">
             <h3>Projects</h3>
             {showAlert && (
               <div className="alert alert-info d-block mt-5" role="alert">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="alert"
-                onClick={handleAlert}
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <i className="fas fa-info-circle mr-2"></i>
-              Click project to view more details.
-            </div>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="alert"
+                  onClick={handleAlert}
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <i className="fas fa-info-circle mr-2"></i>
+                Click project to view more details.
+              </div>
             )}
           </div>
           <div className="row">
