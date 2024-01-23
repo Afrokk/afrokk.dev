@@ -34,8 +34,8 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    Software Engineering Grad with 7 years of experience in the
-                    tech industry, managing a ~2M subs YT channel, former
+                    Software Engineering grad with a parallel 7-year tech
+                    industry journey, managing a 1.7M subs YT channel, former
                     founder of a tech news website, and an avid freelancer with
                     works featured in Forbes, Uber, and more. Currently based in
                     Canada. &#127809;
@@ -55,6 +55,13 @@ const Index = () => {
                       target="_blank"
                     >
                       Resume
+                    </a>
+                    <a
+                      id="text-btn"
+                      className="px-btn px-btn-outline"
+                      href="#projects"
+                    >
+                      Projects
                     </a>
                   </div>
                 </div>
