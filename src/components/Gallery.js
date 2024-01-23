@@ -42,6 +42,21 @@ const Gallery = () => {
             <div>
               <Image
                 className="gallery-img"
+                src="/static/img/gallery/ces2024.jpg"
+                width={452.5}
+                height={603}
+                title="Me at CES 2024 in Las Vegas."
+                alt="Me at CES 2024 in Las Vegas."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>CES 2024 tech convention at the LVCC in Las Vegas.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
                 src="/static/img/gallery/spaceapps.jpeg"
                 width={452.5}
                 height={603}
@@ -117,21 +132,6 @@ const Gallery = () => {
             </div>
             <div className="media-body gallery-caption">
               <p>Desk Setup '23.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="gallery media d-flex">
-            <div>
-              <Image
-                className="gallery-img"
-                src="/static/img/gallery/setup2.jpg"
-                width={452.5}
-                height={603}
-                title="PCMR."
-                alt="A close-up picture of PC setup."
-              />
-            </div>
-            <div className="media-body gallery-caption">
-              <p>PCMR.</p>
             </div>
           </SwiperSlide>
           <div className="swiper-button-prev"></div>

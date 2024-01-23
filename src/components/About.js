@@ -30,16 +30,14 @@ const About = () => {
                 <h3>About me.</h3>
               </div>
               <div className="about-text">
-                <h3>
-                  Tech Enthusiast who loves to turn ideas into experiences
-                  through code.{" "}
-                </h3>
+                <h3>My journey in Software Engineering & Creative Design.</h3>
                 <p>
                   After moving to Canada in 2021, I decided to pursue a career
                   in Computer Science at the University of Windsor. I did my
-                  foundations in C and Java. Aside from Software Engineering, I
-                  have a strong passion for UI/UX design, fueled by my over 5
-                  years of experience in Graphics Design and Content Creation.
+                  foundations in C and Java. I have a strong passion for
+                  Engineering good software and UI/UX design, fueled by my over
+                  5 years of experience in Graphics Design and tech Content
+                  Creation.
                 </p>
                 <div className="about-icons justify-content-center social-icons">
                   <a href="https://github.com/Afrokk" target="_blank">
