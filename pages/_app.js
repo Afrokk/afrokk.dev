@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Afrasiyab - Software Engineer</title>
+        <title>Afrokk - Software Engineer</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="description"

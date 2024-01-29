@@ -26,7 +26,7 @@ const Index = () => {
               <div className="col-lg-6">
                 <div className="type-box">
                   <h6>Hello &#128075;, I'm</h6>
-                  <h1 className="font-alt">Afrasiyab.</h1>
+                  <h1 className="font-alt">Afrokk.</h1>
                   <p className="lead">
                     A passionate{" "}
                     <span>
