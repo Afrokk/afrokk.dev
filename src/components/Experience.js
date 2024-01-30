@@ -19,18 +19,27 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Directed a thriving <b>1.7 million subscribers</b> YouTube channel
-              to produce <b>tech content</b> for a worldwide audience.
+              Directing a thriving <b>1.7 million subscribers</b> YouTube
+              channel to produce <b>tech content</b> for a worldwide audience.
             </li>
             <li>
-              Managed renowned brands including <b>Samsung</b>, <b>Google</b>,{" "}
+              Managing top-tier brands including <b>Samsung</b>, <b>Google</b>,{" "}
               <b>Chevrolet</b>, and more across diverse sectors.
             </li>
             <li>
-              Produced a content library of <b>over 2,000 videos</b> showcasing
-              the latest in technology, spanning <b>smartphones</b>,{" "}
-              <b>computers</b>, and <b>electric vehicles</b>, garnering an
-              impressive <b>5 million</b> monthly views.
+              Engineered a <b>VueJS</b> channel website and an interactive
+              Discord
+              <b> Python chatbot</b> to boost community engagement.
+            </li>
+            <li>
+              Generating over <b>5 million</b> monthly views by producing{" "}
+              <b>2,000+</b>
+              videos till date on emerging tech, spanning <b>smartphones</b>,
+              <b>computers</b>, <b>electric vehicles</b>, and more.
+            </li>
+            <li>
+              Enhanced views from <b>high CPM</b> regions by <b>40%</b> through
+              SEO strategies, significantly boosting monetization potential.
             </li>
           </ul>
         </>
@@ -55,20 +64,16 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Mentored 100+ students</b> in <b>four</b> major Computer
+              Mentored <b>100+ students</b> in <b>four</b> major Computer
               Science courses including <b>C</b>,{" "}
               <b>Object Oriented Programming with Java</b> and{" "}
               <b>Operating Systems Programming</b>.
             </li>
             <li>
-              <b>Conducted</b> engaging <b>workshops</b> for a large cohort{" "}
-              <b>200+ students</b> on programming tools such as <b>C</b>,{" "}
-              <b>SQL</b>, <b>Operating System programming</b> and{" "}
+              Conducted <b>workshops</b> with over <b>200 students</b> to teach
+              Computer Science tools, including <b>C</b>, <b>Java</b>,{" "}
+              <b>SQL</b>, along with <b>Operating System programming</b> and{" "}
               <b>multithreading</b> concepts.
-            </li>
-            <li>
-              Provided study guides, proctored exams, and addressed student
-              queries.
             </li>
           </ul>
         </>
@@ -77,7 +82,7 @@ const Experience = () => {
     {
       id: 3,
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
-      title: "Freelance",
+      title: "Freelance Designer & Developer",
       company: (
         <a href="http://afrokk.design/" target="_blank">
           AfrokkDesigns
@@ -90,16 +95,18 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Crafted websites</b> for different clients using{" "}
-              <b>JavaScript</b>, <b>React</b>, <b>Shopify</b>, and more.
+              Developed websites leveraging <b>JavaScript</b>, <b>React</b>,{" "}
+              <b>Shopify</b>, and others to deliver <b>tailored</b> web
+              solutions.
             </li>
             <li>
-              Designed <b>over 800 photorealistic renders</b> of upcoming tech
-              as a self-taught independent freelancer.{" "}
+              Independently created and designed more than <b>800</b>{" "}
+              <b>photorealistic renders</b> of upcoming smartphones.
             </li>
             <li>
-              Did <b>product photography</b> for various clients including{" "}
-              <b>BestBuy</b>, <b>Oppo</b> and <b>Cornershop by Uber</b>.
+              Conducted product photography for a range of clients, including
+              renowned brands such as <b>BestBuy</b>, <b>Oppo</b>, and{" "}
+              <b>Cornershop by Uber</b>.
             </li>
           </ul>
         </>
@@ -122,18 +129,21 @@ const Experience = () => {
           <ul>
             <li>
               Established and piloted <b>GeeksULTD.COM</b>, a{" "}
-              <b>tech/gaming website</b> for <b>3 years</b>.
+              <b>tech/gaming website</b> for <b>3+ years</b>.
             </li>
             <li>
-              Published <b>500+</b> articles, reviews and editorials on tech.
+              Achieved <b>2x</b> faster load times by optimizing{" "}
+              <b>JavaScript</b> & <b>CSS</b> and integrating <b>CDN</b>{" "}
+              technologies like <b>Cloudflare</b>.
             </li>
             <li>
-              <b>Collaborated with tech brands</b> like Asus, Logitech and MSi
-              to <b>publish 30+ reviews</b>, viewed <b>globally</b>.
+              Authored <b>550+</b> articles and reviews related to{" "}
+              <b>computers</b>,<b>technology</b>, and <b>gaming</b>, reaching{" "}
+              <b>100K+</b> monthly viewers.
             </li>
             <li>
-              Achieved <b>2x faster load speeds</b> by optimizing JavaScript &
-              CSS and <b>integrating CDN technologies</b>.
+              Partnered with <b>Samsung</b>, <b>Logitech</b>, <b>MSi</b>, and
+              more to publish <b>30+</b> product reviews and editorials.
             </li>
           </ul>
         </>

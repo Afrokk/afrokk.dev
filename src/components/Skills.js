@@ -15,6 +15,7 @@ const Skills = () => {
                 <li>
                   <span>2023</span>
                   <h6>Bachelor's in Computer Science</h6>
+                  <h6>Minor in Communication, Media & Film</h6>
                   <p>University of Windsor</p>
                 </li>
                 <li>
