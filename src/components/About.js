@@ -14,7 +14,7 @@ const About = () => {
               <div className="img">
                 <div className="img-in">
                   <Image
-                    src="/static/img/about-me.png"
+                    src="/static/img/about.png"
                     width={500}
                     height={500}
                     title="An image collage showcasing my favourite hobbies/things."
