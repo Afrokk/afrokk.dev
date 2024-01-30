@@ -47,7 +47,7 @@ const Sidebar = ({ blog }) => {
                 />
               </div>
               <h5>
-                Afrasiyab (Afrokk)
+                Afrokk
                 <br />
                 Khan
               </h5>

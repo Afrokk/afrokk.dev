@@ -49,9 +49,12 @@
 		padding-bottom: 60px
 
 #text-btn
+	color: $px-white
 	font-weight: bold
 	font-size: 15px
 	margin-left: 30px
+	.theme-light &
+		color: $px-dark
 
 #text-btn:nth-child(3)
 	margin-left: 0
@@ -182,8 +185,8 @@
 
 	.hb-img
 		img
-			width: auto 
-			height: auto 
+			width: auto
+			height: auto
 			border: none
 			border-radius: 50%
 			opacity: 0.96
@@ -224,7 +227,7 @@
 			@include down-sm
 				font-size: 45px
 				margin-bottom: 15px
-		
+
 		.btn-bar
 			@include down-xsm
 				width: 85vw
@@ -233,6 +236,30 @@
 					display: block
 					margin-left: 5px
 					margin-top: 15px
+
+			a
+				font-weight: bold
+				color: $px-white
+				text-decoration: none
+				position: relative
+				overflow: hidden
+				&::after
+					content: ''
+					position: absolute
+					z-index: -1
+					bottom: 15%
+					left: 50% // center the line
+					transform: translateX(-50%) // ensure the line starts from the center
+					width: 0
+					height: 2px
+					background: #7b2cbf
+					transition: width .3s ease
+				&:hover
+					&::after
+						width: 80%
+				.theme-light &
+					color: $px-dark
+
 		.lead
 			color: $px-white
 			font-weight: 500
@@ -478,7 +505,7 @@
 	cursor: pointer
 	z-index: 1
 	background: $px-dark
-	@include transition(ease all 0.35s)
+	@include transition(ease transform 0.25s)
 	.theme-light &
 		color: $px-dark
 		background: $px-gray
@@ -506,7 +533,7 @@
 	h5
 		margin-bottom: 15px
 		color: $px-white
-		@include transition(ease all 0.35s)
+		@include transition(ease transform 0.35s)
 		.theme-light &
 			color: $px-dark
 
@@ -514,8 +541,9 @@
 		margin: 0
 
 	&:hover
-		background: $px-theme
-		transform: scale(1.1)
+		border: 1px solid $px-theme
+		transform: scale(1.05)
+		color: $px-dark
 		.icon
 			color: $px-white
 			.theme-light
@@ -524,11 +552,11 @@
 		h5
 			color: $px-white
 			.theme-light &
-				color: $px-white
+				color: $px-dark
 		p
 			color: $px-white
 			.theme-light &
-				color: $px-white
+				color: $px-dark
 
 	@include custom-breakpoint(1400px)
 		padding: 20px
@@ -609,7 +637,7 @@
 
 	@include down-sm
 		height: 450px
-	
+
 	@include down-xsm
 		height: auto
 
@@ -620,7 +648,6 @@
 			font-size: 16px
 		span
 			font-size: 13px
-
 
 .quote
 	padding-top: 15px
@@ -720,6 +747,15 @@
 			margin-bottom: 6px
 		.theme-light &
 			color: $px-dark
+
+		a
+			color: $px-link-text
+			text-decoration: none
+			.theme-light &
+				font-weight: bold
+				color: $px-theme
+			&:hover
+				color: #b700fa
 
 	.rb-right
 		h6
@@ -874,9 +910,9 @@
 		.theme-light &
 			color: $px-dark
 		i
+			color: $px-theme
 			width: 30px
 			text-align: center
-			color: $px-theme
 			font-size: 22px
 
 		span
@@ -884,10 +920,11 @@
 
 		+ li
 			padding-top: 20px
-		
+
 	span
 		a
 			color: $px-white
+			text-decoration: none
 			.theme-light &
 				color: $px-dark
 
@@ -908,7 +945,7 @@
 			font-size: 13px
 		span
 			font-size: 13px
-	
+
 	@include custom-breakpoint(290px)
 		padding: 15px
 
@@ -916,15 +953,17 @@
 	display: flex
 	padding-top: 15px
 	gap: 0.5rem
-	a i 
-		font-size: 22px
-		color: $px-white
-		&:hover
-			color: $px-theme
-		.theme-light &
-			color: $px-dark
-			&:hover
-				color: $px-theme
+	color: $px-white
+
+.contact-icons a i
+	color: $px-white
+	font-size: 22px
+
+	.theme-light &
+		color: $px-dark
+
+	&:hover
+		color: $px-theme
 
 .contact-form
 	background: $px-dark
@@ -942,40 +981,40 @@
 			color: $px-dark
 
 	.contact-cta
-			justify-content: center
+		justify-content: center
 
-			a
-				text-align: center
-				margin-right: 20px
-				width: auto
-				height: auto
+		a
+			text-align: center
+			margin-right: 20px
+			width: auto
+			height: auto
 
 			a i 
-				font-size: 18px
-				
+			font-size: 18px
+
 			&:last-child
-				margin-right: 0 	
+				margin-right: 0
 
 	@include custom-breakpoint(1400px)
 		height: 300px
 		.contact-cta
 			padding-top: 0px
 			a i 
-				font-size: 32px
+			font-size: 32px
 
 	@include custom-breakpoint(991px)
 		height: 300px
 		.contact-cta
 			flex-direction: column
-			a 
+			a
 				margin: 10px auto
 			a i
 				font-size: 18px
-	
+
 	@include custom-breakpoint(768px)
 		.contact-cta
 			a i 
-				font-size: 20px
+			font-size: 20px
 
 	@include down-sm
 		height: auto
@@ -1010,8 +1049,7 @@
 
 .feature-box-01:hover .tag-cloud
 	a
-		background: #0184b4
-		color: $px-white
+		background: #5a02a7
 
 .tag-cloud
 	display: inline-block

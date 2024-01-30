@@ -65,6 +65,7 @@ const Projects = () => {
       />
       <section
         data-nav-tooltip="projects"
+        id="projects"
         className="pp-section pp-scrollable section"
       >
         <div className="container">

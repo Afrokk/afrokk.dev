@@ -255,9 +255,10 @@
     .tag
         cursor: default
         font-size: 11px
-        background: #0184b4
+        background: $px-theme
+        text-decoration: none
         cursor: pointer
-        @include transition(ease all 0.35s)
+        @include transition(ease transform 0.35s)
         &:hover
             transform: scale(1.03)
             background: $px-theme
