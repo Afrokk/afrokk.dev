@@ -70,7 +70,7 @@ const Projects = () => {
       >
         <div className="container">
           <div className="title project-section-title" id="projects">
-            <h3>Projects</h3>
+            <h3>Projects.</h3>
             {showAlert && (
               <div className="alert alert-info d-block mt-5" role="alert">
                 <button
