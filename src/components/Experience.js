@@ -33,7 +33,7 @@ const Experience = () => {
             </li>
             <li>
               Generating over <b>5 million</b> monthly views by producing{" "}
-              <b>2,000+</b>
+              <b>2,000+ </b>
               videos till date on emerging tech, spanning <b>smartphones</b>,
               <b>computers</b>, <b>electric vehicles</b>, and more.
             </li>
