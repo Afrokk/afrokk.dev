@@ -248,8 +248,8 @@
 					position: absolute
 					z-index: -1
 					bottom: 15%
-					left: 50% // center the line
-					transform: translateX(-50%) // ensure the line starts from the center
+					left: 50%
+					transform: translateX(-50%)
 					width: 0
 					height: 2px
 					background: #7b2cbf
@@ -259,6 +259,9 @@
 						width: 80%
 				.theme-light &
 					color: $px-dark
+				@include down-xsm
+					&::after
+						display: none
 
 		.lead
 			color: $px-white
