@@ -105,12 +105,13 @@ mark
 
 
 .swiper-button-prev, .swiper-button-next
-  color: $px-theme
-  background: $px-white
+  color: #ffffffb0
+  background: #150321b3
   --swiper-navigation-size: 25px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-  @include transition(ease all 0.55s)
+  transition: ease background 0.3s
   &:hover
-    @include scale(1.1)
+    background: $px-bg-1
+
   @include down-sm
     display: none
