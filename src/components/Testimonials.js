@@ -43,7 +43,7 @@ const Testimonials = () => {
             </div>
             <div className="media-body order-md-2 order-2">
               <p className="quote">
-                I've worked with Afrasiyab before on GeeksULTD and we
+                I've worked with Afrokk before on GeeksULTD and we
                 collaborated on the Litmus project. He's grown tremendously from
                 being a newbie coder to feeling comfortable with several
                 technologies like TypeScript, React, SASS, Git, and more, all
@@ -65,7 +65,7 @@ const Testimonials = () => {
             </div>
             <div className="media-body order-md-2 order-2">
               <p className="quote">
-                Afrasiyab worked as a TA in one of the Computer Science courses
+                Afrokk worked as a TA in one of the Computer Science courses
                 I taught during Fall 2022 at University of Windsor, Canada. He
                 is dedicated, helpful and organized. I wish him good luck.
               </p>
