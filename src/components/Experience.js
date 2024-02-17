@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       logoSrc: "/static/img/thumbs/yt.png",
-      title: "Creative Design Manager",
+      title: "Creative Development Manager",
       company: (
         <a href="https://www.youtube.com/user/XEETECHCARE" target="_blank">
           xeetechcare
