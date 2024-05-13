@@ -34,7 +34,7 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    A Software Engineering grad with a parallel 7-year tech
+                    Software Engineer with a parallel 7-year tech
                     industry journey, managing a 1.7M subs YT channel, former
                     founder of a tech news website, and an avid freelancer with
                     works featured in Forbes, Uber, and more. Currently based in
