@@ -5,6 +5,36 @@ const Experience = () => {
   const resumeData = [
     {
       id: 1,
+      logoSrc: "/static/img/thumbs/mcgill.png",
+      title: "Software Developer",
+      company: (
+        <a href="https://www.mcgill.ca/" target="_blank">
+          McGill University
+        </a>
+      ),
+      location: "Montreal, QC",
+      date: "Apr 2024 - Present",
+      time: "Full Time",
+      description: (
+        <>
+          <ul>
+            <li>
+              Part of the CHIME/FRB team @ McGill, developing{" "}
+              <b>web-based tools & infrastructure</b> for astrophysical{" "}
+              <b>data analysis</b> and maintaining a high-performance{" "}
+              <b>computing cluster</b>.
+            </li>
+            <li>
+              Collaborated in establishing and maintaining a robust compute
+              cluster of over <b>2,500</b> CPU cores, enabling daily processing
+              of <b>1.5 Petabytes</b> for extra-galactic transient sky mapping.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: 2,
       logoSrc: "/static/img/thumbs/yt.png",
       title: "Creative Development Manager",
       company: (
