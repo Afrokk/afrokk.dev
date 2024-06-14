@@ -34,10 +34,10 @@ const Index = () => {
                     </span>
                   </p>
                   <p className="desc">
-                    Software Engineer with a parallel 7-year tech
-                    industry journey, managing a 1.7M subs YT channel, former
-                    founder of a tech news website, and an avid freelancer with
-                    works featured in Forbes, Uber, and more. Currently based in
+                    Software Engineer with a parallel 7-year tech industry
+                    journey, managing a 1.7M subs YT channel, former founder of
+                    a tech news website, and an avid freelancer with works
+                    featured in Forbes, Uber, and more. Currently based in
                     Canada. &#127809;
                   </p>
                   <div className="btn-bar">
@@ -74,7 +74,7 @@ const Index = () => {
                     height={666}
                     src="/static/img/feature-img.png"
                     title="Me"
-                    alt="Afokk Khan"
+                    alt="A picture of me"
                     priority
                   />
                 </div>
