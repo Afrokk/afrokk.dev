@@ -30,7 +30,7 @@ const Testimonials = () => {
 
   return (
     <section className="pp-section pp-scrollable section counter">
-      <div className="container ">
+      <div className="container">
         <Swiper {...props}>
           <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
             <div className="avatar order-md-1 order-1">
