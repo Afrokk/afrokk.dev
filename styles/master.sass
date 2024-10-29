@@ -547,7 +547,7 @@
 
 	&:hover
 		border: 1px solid $px-theme
-		transform: scale(1.05)
+		transform: scale(1.03)
 		color: $px-dark
 		.icon
 			color: $px-white
@@ -782,6 +782,18 @@
 			color: $px-white
 			.theme-light &
 				color: $px-dark
+
+		a
+			color: $px-link-text
+			text-decoration: none
+			.theme-light &
+				font-weight: bold
+				color: $px-theme
+			&:hover
+				color: #b700fa
+
+		b:nth-child(2) > a
+			letter-spacing: 0.1px
 
 .skills
 	background-color: $px-bg-1
