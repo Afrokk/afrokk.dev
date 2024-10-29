@@ -32,8 +32,8 @@ const About = () => {
               <div className="about-text">
                 <h3>My journey in Software Engineering & Creative Design.</h3>
                 <p>
-                  After moving to Canada in 2021, I decided to pursue a career
-                  in Computer Science at the University of Windsor. I did my
+                  After moving to Canada, I decided to pursue a career in
+                  Computer Science at the University of Windsor. I did my
                   foundations in C and Java. I have a strong passion for
                   Engineering good software and UI/UX design, fueled by my over
                   5 years of experience in Graphics Design and tech Content
