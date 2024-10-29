@@ -31,16 +31,17 @@ const Experience = () => {
             </li>
             <li>
               <b>Led migration</b> of critical applications from{" "}
-              <b>React 17 + CRA</b> to <b>React 18 + Vite</b>, improving{" "}
-              <b>speed, scalability</b>, and <b>developer experience</b> across
-              the codebase.
+              <b>React 16, CRA & Node</b> to <b>React 18, Vite & Bun</b>,
+              improving <b>speed, scalability</b>, and{" "}
+              <b>developer experience</b> across the codebase.
             </li>
             <li>
               Maintaining <b>data processing pipelines </b> handling over{" "}
               <b>1.5 petabytes</b> of<b> extra-galactic data</b>, utilizing{" "}
-              <b>Docker Swarm clusters</b>, <b>Prometheus/Grafana</b>, and{" "}
+              <b>Docker Swarm clusters</b>, <b>Prometheus/Grafana</b>,{" "}
               <b>Ansible</b>, & more to support real-time <b>data processing</b>{" "}
-              and <b>infrastructure monitoring</b> for astrophysics research.
+              and <b>infrastructure monitoring</b> for astrophysical research
+              and data analysis.
             </li>
           </ul>
         </>
