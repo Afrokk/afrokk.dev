@@ -19,15 +19,28 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Part of the CHIME/FRB team @ McGill, developing{" "}
-              <b>web-based tools & infrastructure</b> for astrophysical{" "}
-              <b>data analysis</b> and maintaining a high-performance{" "}
-              <b>computing cluster</b>.
+              <b>Full-stack Developer</b> for{" "}
+              <b>
+                <a href="https://chime-experiment.ca/en" target="_blank">
+                  CHIME/FRB
+                </a>
+              </b>{" "}
+              team at McGill, building and maintaining <b>web-based tools</b>{" "}
+              and <b>infrastructure</b> for <b>astrophysical data analysis</b>{" "}
+              and maintaining a <b>high-performance computing cluster</b>.
             </li>
             <li>
-              Collaborated in establishing and maintaining a robust compute
-              cluster of over <b>2,500</b> CPU cores, enabling daily processing
-              of <b>1.5 Petabytes</b> for extra-galactic transient sky mapping.
+              <b>Led migration</b> of critical applications from{" "}
+              <b>React 17 + CRA</b> to <b>React 18 + Vite</b>, improving{" "}
+              <b>speed, scalability</b>, and <b>developer experience</b> across
+              the codebase.
+            </li>
+            <li>
+              Maintaining <b>data processing pipelines </b> handling over{" "}
+              <b>1.5 petabytes</b> of<b> extra-galactic data</b>, utilizing{" "}
+              <b>Docker Swarm clusters</b>, <b>Prometheus/Grafana</b>, and{" "}
+              <b>Ansible</b>, & more to support real-time <b>data processing</b>{" "}
+              and <b>infrastructure monitoring</b> for astrophysics research.
             </li>
           </ul>
         </>
