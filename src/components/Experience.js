@@ -78,8 +78,9 @@ const Experience = () => {
             <li>
               Generating over <b>5 million</b> monthly views by producing{" "}
               <b>2,000+ </b>
-              videos till date on emerging tech, spanning <b>smartphones</b>,
-              <b>computers</b>, <b>electric vehicles</b>, and more.
+              videos till date on emerging tech, spanning <b>
+                smartphones
+              </b>, <b>computers</b>, <b>electric vehicles</b>, and more.
             </li>
             <li>
               Enhanced views from <b>high CPM</b> regions by <b>40%</b> through
