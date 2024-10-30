@@ -22,8 +22,8 @@ const Index = () => {
         <div className="home-banner">
           <ParticlesBackground />
           <div className="container">
-            <div className="row full-screen align-items-center">
-              <div className="col-lg-6">
+            <div className="row full-screen align-items-center flex-wrap-reverse">
+              <div className="col-md-6">
                 <div className="type-box">
                   <h6>Hello &#128075;, I'm</h6>
                   <h1 className="font-alt">Afrokk.</h1>
@@ -66,7 +66,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-md-6">
                 <div className="hb-img d-flex">
                   <Image
                     className="mx-auto my-auto"
