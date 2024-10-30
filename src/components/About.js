@@ -12,9 +12,10 @@ const About = () => {
           <div className="col-lg-6 m-15px-tb">
             <div className="about-me">
               <div className="img">
-                <div className="img-in">
+                <div className="img-in d-flex">
                   <Image
                     src="/static/img/about.png"
+                    className="mx-auto my-auto"
                     width={500}
                     height={500}
                     title="An image collage showcasing my favourite hobbies/things."
