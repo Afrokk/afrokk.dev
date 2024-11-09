@@ -731,8 +731,6 @@
 		img
 			width: auto
 			height: auto
-			.theme-light &
-				filter: invert(1)
 
 		@include down-sm
 			margin-bottom: 25px
@@ -809,6 +807,16 @@
 
 		b:nth-child(2) > a
 			letter-spacing: 0.1px
+
+.resume-box
+	> div:nth-child(4)
+		div > div > div > img
+			.theme-light &
+				filter: invert(1)
+	> div:nth-child(5)
+		div > div > div > img
+			.theme-light &
+				filter: invert(1)
 
 .skills
 	background-color: $px-bg-1
