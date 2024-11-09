@@ -4,7 +4,7 @@ import Image from "next/image";
 const Experience = () => {
   const resumeData = [
     {
-      id: 1,
+      id: "mcgill",
       logoSrc: "/static/img/thumbs/mcgill.png",
       title: "Software Developer",
       company: (
@@ -48,7 +48,7 @@ const Experience = () => {
       ),
     },
     {
-      id: 2,
+      id: "yt",
       logoSrc: "/static/img/thumbs/yt.png",
       title: "Creative Development Manager",
       company: (
@@ -91,7 +91,7 @@ const Experience = () => {
       ),
     },
     {
-      id: 2,
+      id: "uwindsor",
       logoSrc: "/static/img/thumbs/uwindsor.png",
       title: "Teaching Assistant",
       company: (
@@ -125,7 +125,7 @@ const Experience = () => {
       ),
     },
     {
-      id: 3,
+      id: "afrokkdesigns",
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
       title: "Freelance Designer & Developer",
       company: (
@@ -158,7 +158,7 @@ const Experience = () => {
       ),
     },
     {
-      id: 4,
+      id: "geeksultd",
       logoSrc: "/static/img/thumbs/geeksultd.png",
       title: "Co-Founder",
       company: (
