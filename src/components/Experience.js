@@ -52,7 +52,7 @@ const Experience = () => {
       logoSrc: "/static/img/thumbs/yt.png",
       title: "Creative Development Manager",
       company: (
-        <a href="https://www.youtube.com/user/XEETECHCARE" target="_blank">
+        <a href="https://www.xeetechcare.com/" target="_blank">
           xeetechcare
         </a>
       ),
