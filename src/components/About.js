@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="container">
         <div className="row align-items-center justify-content-center">
-          <div className="col-lg-6 m-15px-tb">
+          <div className="col-lg-6 m-15px-tb p-1">
             <div className="about-me">
               <div className="img">
                 <div className="img-in d-flex">
