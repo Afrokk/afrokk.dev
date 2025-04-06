@@ -65,7 +65,7 @@ const ParticlesBackground = () => {
               default: "bounce",
             },
             random: true,
-            speed: 6,
+            speed: 1.5,
             straight: false,
           },
           number: {
@@ -79,7 +79,7 @@ const ParticlesBackground = () => {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "square",
           },
           size: {
             value: { min: 1, max: 7 },
