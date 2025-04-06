@@ -42,6 +42,21 @@ const Gallery = () => {
             <div>
               <Image
                 className="gallery-img"
+                src="/static/img/gallery/chimef2f.jpg"
+                width={452.5}
+                height={603}
+                title="Team CHIME/FRB, McGill University, January 2025."
+                alt="Me with the CHIME/FRB team at McGill University."
+              />
+            </div>
+            <div className="media-body gallery-caption">
+              <p>Team CHIME/FRB, McGill University, January 2025.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="gallery media d-flex">
+            <div>
+              <Image
+                className="gallery-img"
                 src="/static/img/gallery/ces2024.jpg"
                 width={452.5}
                 height={603}
@@ -50,7 +65,7 @@ const Gallery = () => {
               />
             </div>
             <div className="media-body gallery-caption">
-              <p>CES 2024 tech convention at the LVCC in Las Vegas.</p>
+              <p>@ CES 2024 tech convention in Las Vegas.</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
@@ -117,21 +132,6 @@ const Gallery = () => {
             </div>
             <div className="media-body gallery-caption">
               <p>Occasionally, I review tech.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="gallery media d-flex">
-            <div>
-              <Image
-                className="gallery-img"
-                src="/static/img/gallery/setup1.jpg"
-                width={452.5}
-                height={603}
-                title="Desk Setup '23."
-                alt="Desk Setup '23."
-              />
-            </div>
-            <div className="media-body gallery-caption">
-              <p>Desk Setup '23.</p>
             </div>
           </SwiperSlide>
           <div className="swiper-button-prev"></div>

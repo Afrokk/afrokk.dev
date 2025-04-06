@@ -19,7 +19,7 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Full-stack Developer</b> for{" "}
+              <b>Full-stack Software Developer</b> for{" "}
               <b>
                 <a href="https://chime-experiment.ca/en" target="_blank">
                   CHIME/FRB
@@ -37,11 +37,10 @@ const Experience = () => {
             </li>
             <li>
               Maintaining <b>data processing pipelines </b> handling over{" "}
-              <b>1.5 petabytes</b> of<b> extra-galactic data</b>, utilizing{" "}
+              <b>1.5 petabytes</b> of data, utilizing{" "}
               <b>Docker Swarm clusters</b>, <b>Prometheus/Grafana</b>,{" "}
               <b>Ansible</b>, & more to support real-time <b>data processing</b>{" "}
-              and <b>infrastructure monitoring</b> for astrophysical research
-              and data analysis.
+              and <b>infrastructure monitoring</b>.
             </li>
           </ul>
         </>
