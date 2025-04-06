@@ -34,11 +34,10 @@ const About = () => {
                 <h3>My journey in Software Engineering & Creative Design.</h3>
                 <p>
                   After moving to Canada, I decided to pursue a career in
-                  Computer Science at the University of Windsor. I did my
-                  foundations in C and Java. I have a strong passion for
-                  Engineering good software and UI/UX design, fueled by my over
-                  5 years of experience in Graphics Design and tech Content
-                  Creation.
+                  Computer Science. I did my foundations in C and Java. I have a
+                  strong passion for Engineering good software and love UI/UX
+                  design, fueled by my over 5 years of experience in Graphics
+                  Design and tech Content Creation.
                 </p>
                 <div className="about-icons justify-content-center social-icons">
                   <a href="https://github.com/Afrokk" target="_blank">
