@@ -35,7 +35,7 @@ const Testimonials = () => {
           <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
             <div className="avatar order-md-1 order-1">
               <Image
-                src="/static/img/thumbs/testimonial1.jpeg"
+                src="/static/img/thumbs/testimonial1.jpg"
                 alt="Testimonial person image."
                 width={120}
                 height={120}
@@ -57,7 +57,7 @@ const Testimonials = () => {
           <SwiperSlide className="testimonial media d-flex flex-md-row flex-column">
             <div className="avatar order-md-1 order-1">
               <Image
-                src="/static/img/thumbs/testimonial2.jpeg"
+                src="/static/img/thumbs/testimonial2.jpg"
                 alt="Testimonial person image."
                 width={120}
                 height={120}

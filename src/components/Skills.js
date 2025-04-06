@@ -13,7 +13,7 @@ const Skills = () => {
             <div className="col-lg-4 m-15px-tb">
               <ul className="education-box">
                 <li>
-                  <span>2023</span>
+                  <span>2024</span>
                   <h6>Bachelor's in Computer Science</h6>
                   <h6>Minor in Communication, Media & Film</h6>
                   <p>University of Windsor</p>
@@ -35,37 +35,64 @@ const Skills = () => {
                 <h3>My skills</h3>
                 <p>
                   I am <b>language-agnostic</b>, however, I have worked with
-                  several technologies and frameworks during my time freelancing
-                  and on personal projects. These include C, Java,
-                  JavaScript/TypeScript, Python, and more.
+                  several technologies and frameworks during my open source
+                  projects, freelancing and at my job. These include Python,
+                  JavaScript/TypeScript, Java, and more.
                 </p>
                 <div className="row">
                   <div className="col-md-6">
                     <h5>Databases</h5>
                     <ul>
-                      <li>Relational Databases (PostgreSQL, MySQL)</li>
-                      <li>MongoDB</li>
+                      <li>
+                        <b>Relational Databases:</b> PostgreSQL, MySQL, MariaDB,
+                        SQLite
+                      </li>
+                      <li>
+                        <b>Document Databses: </b>MongoDB
+                      </li>
+                    </ul>
+                    <h5>DevOps</h5>
+                    <ul>
+                      <li>
+                        <b>Cloud Providers:</b> GCP
+                      </li>
+                      <li>
+                        <b>Container Orchestration:</b> Docker Swarm, Kubernetes
+                      </li>
+                      <li>
+                        <b>Observability:</b> Prometheus, Grafana
+                      </li>
+                      <li>
+                        <b>Automation:</b> Ansible
+                      </li>
+                      <li>
+                        <b>Version Control & CI/CD:</b> Git, GitHub, GitHub
+                        Actions
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-md-6">
+                    <h5>Frameworks/Libraries</h5>
+                    <ul>
+                      <li>
+                        <b>Libraries:</b> React, Vue.js, Svelte
+                      </li>
+                      <li>
+                        <b>Frameworks:</b> Next.js, Nuxt, SvelteKit
+                      </li>
+                      <li>
+                        <b>Server:</b> Node.js, Express, Flask, Sanic
+                      </li>
+                      <li>
+                        <b>Markup:</b> HTML, CSS, SASS, SCSS, Tailwind, Shadcn
+                      </li>
                     </ul>
                     <h5>Design</h5>
                     <ul>
                       <li>Adobe Suite (PS/Ae/Pr/XD)</li>
-                      <li>Figma</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <h5>Frameworks</h5>
-                    <ul>
-                      <li>React/Next.js</li>
-                      <li>Vue.js/Nuxt</li>
-                      <li>Node/Express</li>
-                      <li>Flask</li>
-                      <li>SASS/SCSS</li>
-                    </ul>
-                    <h5>Tools</h5>
-                    <ul>
-                      <li>Docker</li>
-                      <li>RESTful APIs</li>
-                      <li>Git/Jira</li>
+                      <li>
+                        <b>UI/UX:</b> Figma
+                      </li>
                     </ul>
                   </div>
                 </div>
