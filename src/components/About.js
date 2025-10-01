@@ -40,7 +40,7 @@ const About = () => {
                   design, fueled by my over 5 years of experience in Graphics
                   Design and tech Content Creation.
                 </p>
-                <SocialIcons className="about-icon justify-content-center social-icons" />
+                <SocialIcons className="about-icons" />
               </div>
             </div>
           </div>
