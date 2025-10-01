@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://afrokk.dev/sitemap.xml
+
+# Disallow specific paths (if any)
+# Disallow: /api/
