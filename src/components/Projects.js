@@ -70,7 +70,7 @@ const Projects = () => {
       >
         <div className="container">
           <div className="title project-section-title" id="projects">
-            <h3>Projects.</h3>
+            <h3>Software Portfolio.</h3>
             {showAlert && (
               <div className="alert alert-info d-block mt-5" role="alert">
                 <button
@@ -82,7 +82,7 @@ const Projects = () => {
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <i className="fas fa-info-circle mr-2"></i>
-                Click project to view more details.
+                Click a project to view more details.
               </div>
             )}
           </div>

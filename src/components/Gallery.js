@@ -50,7 +50,7 @@ const Gallery = () => {
               />
             </div>
             <div className="media-body gallery-caption">
-              <p>Team CHIME/FRB, McGill University, January 2025.</p>
+              <p>McGill University, January 2025.</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
