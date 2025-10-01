@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SocialIcons from "./SocialIcons";
 
 const About = () => {
   return (
@@ -39,31 +40,7 @@ const About = () => {
                   design, fueled by my over 5 years of experience in Graphics
                   Design and tech Content Creation.
                 </p>
-                <div className="about-icons justify-content-center social-icons">
-                  <a href="https://github.com/Afrokk" target="_blank">
-                    <i className="fab fa-github" />
-                  </a>
-                  <a href="https://www.instagram.com/afrokk_/" target="_blank">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://500px.com/p/Afrokk" target="_blank">
-                    <i className="fab fa-500px" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/afrasiyab-k/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                  <a href="mailto:hi@afrokk.dev">
-                    <i className="fa fa-envelope" />
-                  </a>
-                  <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#contact">
-                      <span>Contact</span>
-                    </a>
-                  </div>
-                </div>
+                <SocialIcons className="about-icon justify-content-center social-icons" />
               </div>
             </div>
           </div>
