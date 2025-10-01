@@ -61,7 +61,7 @@ const Index = () => {
                       className="px-btn px-btn-outline"
                       href="#projects"
                     >
-                      Projects
+                      Portfolio
                     </a>
                   </div>
                 </div>
@@ -88,7 +88,6 @@ const Index = () => {
       <Gallery />
       <Projects />
       <Skills />
-      <Testimonials />
       <Contact />
       <Footer />
     </Layout>
