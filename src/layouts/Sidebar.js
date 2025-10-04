@@ -96,6 +96,12 @@ const MenuWithOutBlog = () => {
           <span>Portfolio</span>
         </a>
       </li>
+      <li data-menuanchor="research">
+        <a className="nav-link" href="#research">
+          <i className="ti-book" />
+          <span>Research</span>
+        </a>
+      </li>
       <li data-menuanchor="education">
         <a className="nav-link" href="#education">
           <i className="ti-agenda" />

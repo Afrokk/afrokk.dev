@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Research from "@/components/Research";
 
 const Index = () => {
   return (
@@ -87,6 +88,7 @@ const Index = () => {
       <Experience />
       <Gallery />
       <Projects />
+      <Research />
       <Skills />
       <Contact />
       <Footer />
