@@ -71,14 +71,16 @@ const Popup = ({ open, close, project, urlFor }) => {
                   ))}
                 </div>
                 <div className="ml-lg-auto p-0 m-0 tag-btn">
-                  <a
-                    className="tag"
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i> GitHub Page
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      className="tag"
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i> GitHub Page
+                    </a>
+                  )}
                   {project.viewLink && (
                     <a
                       className="tag m-0"
@@ -154,6 +156,36 @@ const Popup = ({ open, close, project, urlFor }) => {
               <p>{project.motivation}</p>
             </>
           )}
+          {project.responsibilities && (
+            <>
+              <h3 className="pt-md-5">Responsibilities</h3>
+              <ul className="pt-4 pb-0 mb-0">
+                {project.responsibilities.map((responsibility, idx) => (
+                  <li key={idx}>{responsibility}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {project.impact && (
+            <>
+              <h3 className="pt-md-5">Impact</h3>
+              <ul className="pt-4 pb-0 mb-0">
+                {project.impact.map((impact, idx) => (
+                  <li key={idx}>{impact}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {project.technologies && (
+            <>
+              <h3 className="pt-md-5">Technologies</h3>
+              <ul className="pt-4 pb-0 mb-0">
+                {project.technologies.map((technology, idx) => (
+                  <li key={idx}>{technology}</li>
+                ))}
+              </ul>
+            </>
+          )}
           {project.footnotes && (
             <>
               <h3 className="pt-md-5">Footnotes</h3>
@@ -162,16 +194,18 @@ const Popup = ({ open, close, project, urlFor }) => {
           )}
         </div>
         <div className="links mx-auto m-0">
-          <div className="btn-bar m-0 p-0">
-            <a
-              className="px-btn px-btn-theme popup-cta"
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i> GitHub Page
-            </a>
-          </div>
+          {project.githubLink && (
+            <div className="btn-bar m-0 p-0">
+              <a
+                className="px-btn px-btn-theme popup-cta"
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i> GitHub Page
+              </a>
+            </div>
+          )}
           {project.viewLink && (
             <div className="btn-bar">
               <a
