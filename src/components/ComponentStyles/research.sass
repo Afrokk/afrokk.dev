@@ -1,0 +1,341 @@
+.research-filters
+  display: flex
+  flex-wrap: wrap
+  gap: 10px
+  margin-bottom: 35px
+  justify-content: center
+
+  .filter-btn
+    padding: 8px 20px
+    background: $px-dark
+    color: $px-white
+    border: 1px solid rgba($px-white, 0.1)
+    border-radius: 20px
+    cursor: pointer
+    transition: all 0.3s ease
+    font-size: 14px
+    font-weight: 400
+
+    .theme-light &
+      background: $px-gray
+      color: $px-dark
+      border: 1px solid rgba($px-dark, 0.1)
+
+    &:hover
+      background: $px-theme
+      border-color: $px-theme
+      color: $px-white
+      transform: translateY(-2px)
+
+    &.active
+      background: $px-theme
+      border-color: $px-theme
+      color: $px-white
+
+.research-list
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+.research-card
+  background: $px-dark
+  padding: 20px
+  border-radius: 6px
+  border: 1px solid rgba($px-white, 0.05)
+  transition: all 0.3s ease
+  position: relative
+
+  .theme-light &
+    background: $px-gray
+    border: 1px solid rgba($px-dark, 0.1)
+
+  &:hover
+    border-color: $px-theme
+    transform: translateY(-1px)
+    box-shadow: 0 3px 15px rgba($px-theme, 0.15)
+
+  &.featured
+    border-color: $px-theme
+    border-width: 2px
+
+.featured-badge
+  position: absolute
+  top: 15px
+  right: 15px
+  background: $px-theme
+  color: $px-white
+  padding: 5px 12px
+  border-radius: 15px
+  font-size: 12px
+  font-weight: 500
+
+  i
+    margin-right: 5px
+
+.research-header
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  gap: 12px
+  margin-bottom: 12px
+  flex-wrap: wrap
+
+.research-title
+  color: $px-white
+  font-size: 18px
+  font-weight: 500
+  margin: 0
+  flex: 1
+  line-height: 1.3
+
+  .theme-light &
+    color: $px-dark
+
+.publication-type
+  background: rgba($px-theme, 0.2)
+  color: $px-theme
+  padding: 4px 10px
+  border-radius: 4px
+  font-size: 11px
+  font-weight: 500
+  text-transform: uppercase
+  white-space: nowrap
+
+.research-meta
+  display: flex
+  flex-direction: column
+  gap: 8px
+  margin-bottom: 0
+  font-size: 13px
+  color: rgba($px-white, 0.7)
+
+  .theme-light &
+    color: rgba($px-dark, 0.7)
+
+  i
+    margin-right: 6px
+    color: $px-theme
+    display: inline-block
+    width: 1.25em
+    text-align: center
+
+  .authors, .venue-year span
+    > *:not(i)
+      padding-left: 0
+
+.authors
+  display: flex
+  align-items: center
+  line-height: 1.5
+
+.venue-year
+  display: flex
+  gap: 15px
+  flex-wrap: wrap
+  align-items: center
+
+  span
+    display: flex
+    align-items: center
+    line-height: 1.5
+
+.research-tags
+  display: flex
+  flex-wrap: wrap
+  gap: 8px
+  margin-bottom: 15px
+
+  .tag
+    background: rgba($px-white, 0.05)
+    color: $px-white
+    padding: 4px 12px
+    border-radius: 4px
+    font-size: 12px
+
+    .theme-light &
+      background: rgba($px-dark, 0.08)
+      color: $px-dark
+
+.research-links-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 10px
+  margin-top: 12px
+  padding-top: 12px
+  border-top: 1px solid rgba($px-white, 0.05)
+  flex-wrap: wrap
+
+  .theme-light &
+    border-top: 1px solid rgba($px-dark, 0.1)
+
+  .research-links-left
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    flex: 1
+
+  .research-link
+    display: inline-flex
+    align-items: center
+    gap: 5px
+    color: $px-theme
+    text-decoration: none
+    font-size: 13px
+    font-weight: 500
+    transition: all 0.3s ease
+
+    i
+      font-size: 13px
+
+    &:hover
+      color: lighten($px-theme, 10%)
+      transform: translateX(3px)
+
+    &.doi-link
+      color: rgba($px-white, 0.7)
+      font-family: monospace
+      font-size: 12px
+      transition: all 0.1s ease
+
+
+      .theme-light &
+        color: rgba($px-dark, 0.7)
+
+      &:hover
+        color: $px-theme
+        transform: translateX(0)
+
+.research-citations
+  margin-top: 10px
+  padding-top: 10px
+  border-top: 1px solid rgba($px-white, 0.05)
+  font-size: 13px
+  color: rgba($px-white, 0.6)
+
+  .theme-light &
+    border-top: 1px solid rgba($px-dark, 0.1)
+    color: rgba($px-dark, 0.6)
+
+  i
+    margin-right: 5px
+    color: $px-theme
+
+.research-footer
+  text-align: center
+  margin-top: 40px
+  padding-top: 30px
+  border-top: 1px solid rgba($px-white, 0.05)
+
+  .theme-light &
+    border-top: 1px solid rgba($px-dark, 0.1)
+
+  p
+    margin: 0
+    color: rgba($px-white, 0.7)
+
+    .theme-light &
+      color: rgba($px-dark, 0.7)
+
+.research-footer .orcid-link
+  color: $px-theme
+  text-decoration: none
+  font-weight: 500
+  display: inline-flex
+  align-items: center
+  gap: 6px
+  transition: all 0.3s ease
+    
+  i
+    font-size: 18px
+
+  &:hover
+    color: lighten($px-theme, 10%)
+
+.no-publications
+  text-align: center
+  padding: 60px 20px
+  color: rgba($px-white, 0.5)
+
+  .theme-light &
+    color: rgba($px-dark, 0.5)
+
+  p
+    margin: 0
+    font-size: 16px
+
+// Loading and Error States
+.text-center
+  text-align: center
+  color: rgba($px-white, 0.8)
+
+  .theme-light &
+    color: rgba($px-dark, 0.8)
+
+  .fa-spinner
+    color: $px-theme
+
+  .fa-exclamation-triangle
+    color: #ff6b6b
+
+  p
+    margin: 10px 0
+    font-size: 16px
+
+@include down-md
+  .research-card
+    padding: 18px
+
+  .research-title
+    font-size: 16px
+
+  .research-meta
+    font-size: 12px
+
+  .research-link
+    font-size: 12px
+
+  .load-more-btn
+    padding: 10px 25px
+    font-size: 13px
+
+  .research-links-container
+    flex-direction: column
+    align-items: flex-start
+
+  .research-links-left
+    width: 100%
+
+  .research-header
+    flex-direction: column
+    align-items: flex-start
+
+  .publication-type
+    align-self: flex-start
+
+@include down-sm
+  .research-filters
+    .filter-btn
+      padding: 6px 15px
+      font-size: 13px
+
+  .research-card
+    padding: 20px
+
+  .research-title
+    font-size: 18px
+
+  .research-meta
+    font-size: 13px
+
+  .venue-year
+    flex-direction: column
+    gap: 8px
+
+  .research-links
+    flex-direction: column
+
+  .featured-badge
+    position: static
+    display: inline-block
+    margin-bottom: 15px

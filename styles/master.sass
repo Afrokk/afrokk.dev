@@ -486,7 +486,7 @@
 		text-align: center
 		a
 			color: $px-white
-			font-size: 18px
+			font-size: 22px
 			margin-right: 17px
 			.theme-light &
 				color: $px-dark
@@ -532,6 +532,7 @@
 	cursor: pointer
 	z-index: 1
 	background: $px-dark
+	border: 1px solid rgba($px-white, 0.05)
 	@include transition(ease transform 0.25s)
 	.theme-light &
 		color: $px-dark
@@ -568,8 +569,9 @@
 		margin: 0
 
 	&:hover
-		border: 1px solid $px-theme
-		transform: scale(1.03)
+		border-color: $px-theme
+		transform: translateY(-2px)
+		box-shadow: 0 3px 15px rgba($px-theme, 0.15)
 		color: $px-dark
 		.icon
 			color: $px-white
@@ -820,7 +822,7 @@
 			letter-spacing: 0.1px
 
 .resume-box
-	div:nth-child(4)
+	div:nth-child(3)
 		div > div > div > img
 			width: 80%
 			.theme-light &
@@ -933,7 +935,7 @@
 				border-top: 1px solid rgba($px-dark, 0.5)
 
 #contact
-	padding-bottom: 200px
+	padding-bottom: 100px
 	background-color: $px-bg-1
 	.theme-light &
 		background-color: $px-white
@@ -1119,7 +1121,7 @@
 	padding: 0
 	margin-bottom: 5px
 	a
-		@include transition(ease all 0.35s)
+		@include transition(ease all 0.25s)
 		padding: 4px 12px
 		display: inline-block
 		margin: 0
@@ -1159,3 +1161,40 @@
 		color: $px-gray
 		.theme-light &
 			color: $px-white
+
+.load-more-container
+	display: flex
+	justify-content: center
+	margin: 25px 0
+
+.load-more-btn
+	background: $px-dark
+	color: $px-white
+	border: 1px solid rgba($px-white, 0.1)
+	padding: 12px 30px
+	border-radius: 25px
+	font-size: 14px
+	font-weight: 500
+	cursor: pointer
+	transition: all 0.3s ease
+	display: inline-flex
+	align-items: center
+	gap: 8px
+
+	.theme-light &
+		background: $px-gray
+		color: $px-dark
+		border: 1px solid rgba($px-dark, 0.1)
+
+	i
+		font-size: 12px
+
+	&:hover
+		background: $px-theme
+		border-color: $px-theme
+		color: $px-white
+		transform: translateY(-2px)
+		box-shadow: 0 4px 12px rgba($px-theme, 0.3)
+
+	&:active
+		transform: translateY(0)

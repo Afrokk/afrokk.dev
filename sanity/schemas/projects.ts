@@ -30,16 +30,37 @@ export default {
       description: 'More about the project (Paragraph 2).',
     },
     {
-      name: 'motivation',
-      type: 'text',
-      title: 'Motivation',
-      description: 'Motivation behind the project.',
-    },
-    {
       name: 'features',
       title: 'Features',
       type: 'array',
       of: [{type: 'string'}],
+    },
+    {
+      name: 'responsibilities',
+      type: 'array',
+      of: [{type: 'string'}],
+      title: 'Responsibilities',
+      description: 'Responsibilities for the project.',
+    },
+    {
+      name: 'impact',
+      type: 'array',
+      of: [{type: 'string'}],
+      title: 'Impact',
+      description: 'Impact of the project.',
+    },
+    {
+      name: 'technologies',
+      type: 'array',
+      of: [{type: 'string'}],
+      title: 'Technologies',
+      description: 'Tech stack used in the project.',
+    },
+    {
+      name: 'motivation',
+      type: 'text',
+      title: 'Motivation',
+      description: 'Motivation behind the project.',
     },
     {
       name: 'footnotes',

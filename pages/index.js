@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Research from "@/components/Research";
 
 const Index = () => {
   return (
@@ -61,7 +62,7 @@ const Index = () => {
                       className="px-btn px-btn-outline"
                       href="#projects"
                     >
-                      Projects
+                      Portfolio
                     </a>
                   </div>
                 </div>
@@ -87,8 +88,8 @@ const Index = () => {
       <Experience />
       <Gallery />
       <Projects />
+      <Research />
       <Skills />
-      <Testimonials />
       <Contact />
       <Footer />
     </Layout>

@@ -19,15 +19,10 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Full-stack Software Developer</b> for{" "}
-              <b>
-                <a href="https://chime-experiment.ca/en" target="_blank">
-                  CHIME/FRB
-                </a>
-              </b>{" "}
-              team at McGill, building and maintaining <b>web-based tools</b>{" "}
-              and <b>infrastructure</b> for <b>astrophysical data analysis</b>{" "}
-              and maintaining a <b>high-performance computing cluster</b>.
+              <b>Full-stack Software Developer</b> at McGill, building and
+              maintaining <b>web-based tools</b> and <b>infrastructure</b> for{" "}
+              <b>astrophysical data analysis</b> and maintaining a{" "}
+              <b>high-performance computing cluster</b>.
             </li>
             <li>
               <b>Led migration</b> of critical applications from{" "}
@@ -90,6 +85,51 @@ const Experience = () => {
       ),
     },
     {
+      id: "afrokkdev",
+      logoSrc: "/static/img/thumbs/afrokkdesigns.png",
+      title: "Full Stack AI Developer - Freelance",
+      company: (
+        <a href="https://www.upwork.com/freelancers/afrokkdev" target="_blank">
+          Upwork
+        </a>
+      ),
+      location: "Remote",
+      date: "2024 - Present",
+      time: "Part Time",
+      description: (
+        <>
+          <ul>
+            <li>
+              Delivered <b>AI-enabled web applications</b> for multiple clients
+              across SaaS, media, and analytics domains using <b>Next.js</b>,{" "}
+              <b>Node.js</b>, <b>Python</b>, and <b>TypeScript</b>.
+            </li>
+            <li>
+              Integrated <b>LLM workflows</b> (RAG, vector search, embeddings)
+              with
+              <b> Postgres</b>, <b>Redis</b>, and <b>vector DBs</b> (Pinecone /
+              pgvector) to enhance personalization and automation.
+            </li>
+            <li>
+              Built modular <b>API platforms</b> (REST + edge-ready streaming)
+              with <b>tRPC</b>, <b>WebSockets</b>, and{" "}
+              <b>queue-backed workers</b> for background processing.
+            </li>
+
+            <li>
+              Lead several projects as <b>Software Architect / Consultant</b>,
+              including <b>system design</b>, <b>cloud architecture</b>, and{" "}
+              <b>scalability planning</b> for large-scale <b> AI-enabled</b>{" "}
+              applications.
+            </li>
+            <li>
+              Produced <b>technical audits</b> & phased <b>roadmaps</b>.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       id: "uwindsor",
       logoSrc: "/static/img/thumbs/uwindsor.png",
       title: "Teaching Assistant",
@@ -118,39 +158,6 @@ const Experience = () => {
               Computer Science tools, including <b>C</b>, <b>Java</b>,{" "}
               <b>SQL</b>, along with <b>Operating System programming</b> and{" "}
               <b>multithreading</b> concepts.
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      id: "afrokkdesigns",
-      logoSrc: "/static/img/thumbs/afrokkdesigns.png",
-      title: "Freelance Designer & Developer",
-      company: (
-        <a href="http://afrokk.design/" target="_blank">
-          AfrokkDesigns
-        </a>
-      ),
-      location: "Remote",
-      date: "Sept 2020 - May 2023",
-      time: "Part Time",
-      description: (
-        <>
-          <ul>
-            <li>
-              Developed websites leveraging <b>JavaScript</b>, <b>React</b>,{" "}
-              <b>Shopify</b>, and others to deliver <b>tailored</b> web
-              solutions.
-            </li>
-            <li>
-              Independently created and designed more than <b>800</b>{" "}
-              <b>photorealistic renders</b> of upcoming smartphones.
-            </li>
-            <li>
-              Conducted product photography for a range of clients, including
-              renowned brands such as <b>BestBuy</b>, <b>Oppo</b>, and{" "}
-              <b>Cornershop by Uber</b>.
             </li>
           </ul>
         </>
@@ -247,11 +254,10 @@ const Experience = () => {
               </div>
             ))}
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="load-more-container">
             {hiddenExperiences > 0 && (
               <button
-                id="text-btn"
-                className="px-btn px-btn-outline load-more-btn"
+                className="load-more-btn"
                 onClick={handleLoadMore}
               >
                 <>

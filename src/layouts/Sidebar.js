@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ActiveSection from "../utilities/ActiveSection";
 import Image from "next/image";
+import SocialIcons from "@/components/SocialIcons";
 
 const Sidebar = ({ blog }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -55,23 +56,7 @@ const Sidebar = ({ blog }) => {
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
-        <div className="nav justify-content-center social-icons">
-          <a href="https://github.com/Afrokk" target="_blank">
-            <i className="fab fa-github" />
-          </a>
-          <a href="https://www.instagram.com/afrokk_/" target="_blank">
-            <i className="fab fa-instagram" />
-          </a>
-          <a href="https://500px.com/p/Afrokk" target="_blank">
-            <i className="fab fa-500px" />
-          </a>
-          <a href="https://www.linkedin.com/in/afrasiyab-k/" target="_blank">
-            <i className="fab fa-linkedin-in" />
-          </a>
-          <a href="mailto:hi@afrokk.dev">
-            <i className="fa fa-envelope" />
-          </a>
-        </div>
+        <SocialIcons className="nav justify-content-center social-icons" />
       </header>
     </>
   );
@@ -101,14 +86,20 @@ const MenuWithOutBlog = () => {
       </li>
       <li data-menuanchor="hackathons">
         <a className="nav-link" href="#hackathons">
-          <i className="ti-cup" />
-          <span>Hackathons</span>
+          <i className="ti-image" />
+          <span>Gallery</span>
         </a>
       </li>
       <li data-menuanchor="projects">
         <a className="nav-link" href="#projects">
           <i className="ti-rocket" />
-          <span>Projects</span>
+          <span>Portfolio</span>
+        </a>
+      </li>
+      <li data-menuanchor="research">
+        <a className="nav-link" href="#research">
+          <i className="ti-book" />
+          <span>Research</span>
         </a>
       </li>
       <li data-menuanchor="education">

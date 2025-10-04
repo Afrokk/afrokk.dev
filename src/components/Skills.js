@@ -94,6 +94,21 @@ const Skills = () => {
                         <b>UI/UX:</b> Figma
                       </li>
                     </ul>
+                    <h5>AI/ML</h5>
+                    <ul>
+                      <li>
+                        <b>Frameworks:</b> PyTorch, TensorFlow
+                      </li>
+                      <li>
+                        <b>Model Hub:</b> Hugging Face
+                      </li>
+                      <li>
+                        <b>LLM Orchestration:</b> LangChain
+                      </li>
+                      <li>
+                        <b>APIs:</b> OpenAI, Anthropic, Gemini
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

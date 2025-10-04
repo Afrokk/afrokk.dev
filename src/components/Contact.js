@@ -1,3 +1,5 @@
+import SocialIcons from "./SocialIcons";
+
 const Contact = () => {
   return (
     <section
@@ -26,29 +28,7 @@ const Contact = () => {
                     </span>
                   </li>
                   <li>
-                    <div className="contact-icons justify-content-center social-icons">
-                      <a href="https://github.com/Afrokk" target="_blank">
-                        <i className="fab fa-github" />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/afrokk_/"
-                        target="_blank"
-                      >
-                        <i className="fab fa-instagram" />
-                      </a>
-                      <a href="https://500px.com/p/Afrokk" target="_blank">
-                        <i className="fab fa-500px" />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/in/afrasiyab-k/"
-                        target="_blank"
-                      >
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                      <a href="mailto:hi@afrokk.dev">
-                        <i className="fa fa-envelope" />
-                      </a>
-                    </div>
+                    <SocialIcons className="contact-icons justify-content-center social-icons" />
                   </li>
                 </ul>
               </div>
