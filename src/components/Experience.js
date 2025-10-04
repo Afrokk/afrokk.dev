@@ -117,9 +117,8 @@ const Experience = () => {
             </li>
 
             <li>
-              Lead several projects as{" "}
-              <b>Senior Software Architect / Consultant</b>, including{" "}
-              <b>system design</b>, <b>cloud architecture</b>, and{" "}
+              Lead several projects as <b>Software Architect / Consultant</b>,
+              including <b>system design</b>, <b>cloud architecture</b>, and{" "}
               <b>scalability planning</b> for large-scale <b> AI-enabled</b>{" "}
               applications.
             </li>
@@ -255,11 +254,10 @@ const Experience = () => {
               </div>
             ))}
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="load-more-container">
             {hiddenExperiences > 0 && (
               <button
-                id="text-btn"
-                className="px-btn px-btn-outline load-more-btn"
+                className="load-more-btn"
                 onClick={handleLoadMore}
               >
                 <>

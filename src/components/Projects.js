@@ -129,11 +129,10 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="load-more-container">
             {hiddenProjects > 0 && (
               <button
-                id="text-btn"
-                className="px-btn px-btn-outline load-more-btn"
+                className="load-more-btn"
                 onClick={handleLoadMore}
                 disabled={loading}
               >

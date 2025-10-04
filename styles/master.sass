@@ -532,6 +532,7 @@
 	cursor: pointer
 	z-index: 1
 	background: $px-dark
+	border: 1px solid rgba($px-white, 0.05)
 	@include transition(ease transform 0.25s)
 	.theme-light &
 		color: $px-dark
@@ -568,8 +569,9 @@
 		margin: 0
 
 	&:hover
-		border: 1px solid $px-theme
-		transform: scale(1.03)
+		border-color: $px-theme
+		transform: translateY(-2px)
+		box-shadow: 0 3px 15px rgba($px-theme, 0.15)
 		color: $px-dark
 		.icon
 			color: $px-white
@@ -1159,3 +1161,40 @@
 		color: $px-gray
 		.theme-light &
 			color: $px-white
+
+.load-more-container
+	display: flex
+	justify-content: center
+	margin: 25px 0
+
+.load-more-btn
+	background: $px-dark
+	color: $px-white
+	border: 1px solid rgba($px-white, 0.1)
+	padding: 12px 30px
+	border-radius: 25px
+	font-size: 14px
+	font-weight: 500
+	cursor: pointer
+	transition: all 0.3s ease
+	display: inline-flex
+	align-items: center
+	gap: 8px
+
+	.theme-light &
+		background: $px-gray
+		color: $px-dark
+		border: 1px solid rgba($px-dark, 0.1)
+
+	i
+		font-size: 12px
+
+	&:hover
+		background: $px-theme
+		border-color: $px-theme
+		color: $px-white
+		transform: translateY(-2px)
+		box-shadow: 0 4px 12px rgba($px-theme, 0.3)
+
+	&:active
+		transform: translateY(0)
