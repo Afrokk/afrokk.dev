@@ -126,8 +126,8 @@ const Gallery = () => {
                 width={452.5}
                 height={603}
                 src="/static/img/gallery/sony.jpg"
-                title="Sony A7Siii."
-                alt="A picture of Sony A7Siii."
+                title="Studio setup."
+                alt="A picture of my studio setup."
               />
             </div>
             <div className="media-body gallery-caption">
