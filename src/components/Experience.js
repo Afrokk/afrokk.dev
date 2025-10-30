@@ -89,9 +89,17 @@ const Experience = () => {
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
       title: "Full Stack AI Developer - Freelance",
       company: (
-        Independent Consultant / <a href="https://www.upwork.com/freelancers/afrokkdev" target="_blank">
-          Upwork
-        </a>
+       (
+        <>
+          Independent Consultant /{" "}
+          <a
+            href="https://www.upwork.com/freelancers/afrokkdev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Upwork
+          </a>
+        </>
       ),
       location: "Remote",
       date: "2024 - Present",
