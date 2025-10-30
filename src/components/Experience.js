@@ -89,7 +89,6 @@ const Experience = () => {
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
       title: "Full Stack AI Developer - Freelance",
       company: (
-       (
         <>
           Independent Consultant /{" "}
           <a
@@ -264,10 +263,7 @@ const Experience = () => {
           </div>
           <div className="load-more-container">
             {hiddenExperiences > 0 && (
-              <button
-                className="load-more-btn"
-                onClick={handleLoadMore}
-              >
+              <button className="load-more-btn" onClick={handleLoadMore}>
                 <>
                   <i className="ti-angle-down"></i> Load More (
                   {hiddenExperiences})
