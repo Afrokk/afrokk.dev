@@ -19,23 +19,32 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Full-stack Software Developer</b> at McGill, building and
-              maintaining <b>web-based tools</b> and <b>infrastructure</b> for{" "}
-              <b>astrophysical data analysis</b> and maintaining a{" "}
-              <b>high-performance computing cluster</b>.
+              <b>Full-stack / Infrastructure engineer</b> at McGill University,
+              building and maintaining <b>high-uptime web platforms</b>,{" "}
+              <b>data processing systems</b>, and{" "}
+              <b>compute cluster infrastructure</b> used for large-scale
+              astrophysical research.
             </li>
             <li>
-              <b>Led migration</b> of critical applications from{" "}
-              <b>React 16, CRA & Node</b> to <b>React 18, Vite & Bun</b>,
-              improving <b>speed, scalability</b>, and{" "}
-              <b>developer experience</b> across the codebase.
+              Improved reliability and performance of core <b>Python </b> /{" "}
+              <b>Sanic APIs</b> and <b>MongoDB</b> by tracking down failure
+              modes on multi-CPU nodes, hardening <b>Docker Swarm</b> configs,
+              and load-testing with <b>Locust</b>, resulting in over <b>40%</b>{" "}
+              fewer failed calls.
             </li>
             <li>
-              Maintaining <b>data processing pipelines </b> handling over{" "}
-              <b>1.5 petabytes</b> of data, utilizing{" "}
-              <b>Docker Swarm clusters</b>, <b>Prometheus/Grafana</b>,{" "}
-              <b>Ansible</b>, & more to support real-time <b>data processing</b>{" "}
-              and <b>infrastructure monitoring</b>.
+              Operate and scale <b>10+ node compute clusters</b> (petabyte-scale
+              data flow): <b>containerized</b> legacy services, set up secure
+              deployments with <b>Docker secrets</b>, <b>Prometheus/Grafana</b>{" "}
+              monitoring, automated backups/cron jobs, and recovery workflows
+              for missing data and hardware issues (ZFS, disks, LDAP auth).
+            </li>
+            <li>
+              <b>Led frontend work</b> on new features in <b>React</b> while
+              maintaining and gradually deprecating <b>Vue 2</b>, <b>Django</b>,
+              and other <b>legacy architecture</b>; migrated critical
+              functionality into the newer platforms and documented it for
+              non-technical stakeholders.
             </li>
           </ul>
         </>
@@ -70,9 +79,9 @@ const Experience = () => {
               <b> Python chatbot</b> to boost community engagement.
             </li>
             <li>
-              Generating over <b>5 million</b> monthly views by producing{" "}
+              Generating over <b>3+ million</b> monthly views by producing{" "}
               <b>2,000+ </b>
-              videos till date on emerging tech, spanning <b>
+              videos till to-date on emerging tech, spanning <b>
                 smartphones
               </b>, <b>computers</b>, <b>electric vehicles</b>, and more.
             </li>
@@ -87,7 +96,7 @@ const Experience = () => {
     {
       id: "afrokkdev",
       logoSrc: "/static/img/thumbs/afrokkdesigns.png",
-      title: "Full Stack AI Developer - Freelance",
+      title: "Full Stack AI Developer",
       company: (
         <>
           Independent Consultant /{" "}
@@ -107,30 +116,36 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Delivered <b>AI-enabled web applications</b> for multiple clients
-              across SaaS, media, and analytics domains using <b>Next.js</b>,{" "}
-              <b>Node.js</b>, <b>Python</b>, and <b>TypeScript</b>.
+              Shipped <b>AI-enabled web apps</b> and tools using <b>Next.js</b>,{" "}
+              <b>Node.js</b>, <b>Python</b>, and <b>TypeScript</b>, from
+              prototype to <b>production</b>.
             </li>
             <li>
-              Integrated <b>LLM workflows</b> (RAG, vector search, embeddings)
-              with
-              <b> Postgres</b>, <b>Redis</b>, and <b>vector DBs</b> (Pinecone /
-              pgvector) to enhance personalization and automation.
+              <b>Led end-to-end handover</b> of a production{" "}
+              <b>microfinance / lending platform</b>: audited
+              codebase/credentials, enforced <b>RBAC</b>, rebuilt deployment
+              pipelines (<b>AWS</b>, <b>Jenkins</b>), and delivered a{" "}
+              <b>full handover package + architecture docs</b>.
             </li>
             <li>
-              Built modular <b>API platforms</b> (REST + edge-ready streaming)
-              with <b>tRPC</b>, <b>WebSockets</b>, and{" "}
-              <b>queue-backed workers</b> for background processing.
-            </li>
-
-            <li>
-              Lead several projects as <b>Software Architect / Consultant</b>,
-              including <b>system design</b>, <b>cloud architecture</b>, and{" "}
-              <b>scalability planning</b> for large-scale <b> AI-enabled</b>{" "}
-              applications.
+              <b>Delivered features</b> like an all-in-one <b>AI platform</b>,
+              chat-style <b>bot integrations</b>, and <b>AI PDF/OCR parsing</b>{" "}
+              workflows & built <b>LLM-driven features</b> (<b>RAG pipelines</b>
+              , <b>embeddings</b>, custom prompting).
             </li>
             <li>
-              Produced <b>technical audits</b> & phased <b>roadmaps</b>.
+              Built backend <b>APIs</b>, <b>admin dashboards</b>, and basic{" "}
+              <b>observability</b> (<b>auth</b>, <b>RBAC</b>,{" "}
+              <b>environment isolation</b>, <b>logging/monitoring</b>) so
+              non-technical teams could operate the system without engineering
+              support.
+            </li>
+            <li>
+              Advised founders on <b>feasibility</b>, <b>scope</b>, <b>cost</b>,
+              and timeline for idea-stage products; produced{" "}
+              <b>technical audits</b>, <b>phased roadmaps</b>, ERDs, and system
+              diagrams so they could ship a <b>credible demo</b> for investors
+              without <b>burning budget</b>.
             </li>
           </ul>
         </>
