@@ -152,40 +152,6 @@ const Experience = () => {
       ),
     },
     {
-      id: "uwindsor",
-      logoSrc: "/static/img/thumbs/uwindsor.png",
-      title: "Teaching Assistant",
-      company: (
-        <a
-          href="https://www.uwindsor.ca/science/computerscience/"
-          target="_blank"
-        >
-          uWindsor School of Computer Science
-        </a>
-      ),
-      location: "Windsor, ON",
-      date: "Jan 2022 - Dec 2023",
-      time: "Part Time",
-      description: (
-        <>
-          <ul>
-            <li>
-              Mentored <b>100+ students</b> in <b>four</b> major Computer
-              Science courses including <b>C</b>,{" "}
-              <b>Object Oriented Programming with Java</b> and{" "}
-              <b>Operating Systems Programming</b>.
-            </li>
-            <li>
-              Conducted <b>workshops</b> with over <b>200 students</b> to teach
-              Computer Science tools, including <b>C</b>, <b>Java</b>,{" "}
-              <b>SQL</b>, along with <b>Operating System programming</b> and{" "}
-              <b>multithreading</b> concepts.
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
       id: "geeksultd",
       logoSrc: "/static/img/thumbs/geeksultd.png",
       title: "Co-Founder",
