@@ -42,8 +42,8 @@ const Sidebar = ({ blog }) => {
               <div className="img">
                 <Image
                   src="/static/img/nav-me.jpg"
-                  width={90}
-                  height={87}
+                  width={91}
+                  height={90}
                   alt="Thumb image."
                 />
               </div>
