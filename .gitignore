@@ -6,3 +6,4 @@
 .env
 sanity/sanity.config.ts
 sanity/sanity.cli.ts
+.DS_store
