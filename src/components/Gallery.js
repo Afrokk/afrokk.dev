@@ -80,7 +80,7 @@ const Gallery = () => {
     <div id="hackathons" className="pp-section pp-scrollable section counter">
       <div className="container">
         <div className="title">
-          <h3>Hackathons & Gallery.</h3>
+          <h3>Gallery.</h3>
         </div>
       </div>
       <div className="container" ref={galleryRef}>
@@ -92,27 +92,32 @@ const Gallery = () => {
                 src="/static/img/gallery/chimef2f.jpg"
                 width={452.5}
                 height={603}
-                title="Team CHIME/FRB, McGill University, January 2025."
-                alt="Me with the CHIME/FRB team at McGill University."
+                title="Science at the DRAO, in Penticton, BC."
+                alt="Me at the DRAO in Penticton, BC."
               />
             </div>
             <div className="media-body gallery-caption">
-              <p>McGill University, January 2025.</p>
+              <p>
+                Science at the Dominion Radio Astronomy Observatory. Penticton,
+                BC.
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
             <div>
               <Image
                 className="gallery-img"
-                src="/static/img/gallery/ces2024.jpg"
+                src="/static/img/gallery/ces2026.jpg"
                 width={452.5}
                 height={603}
-                title="Me at CES 2024 in Las Vegas."
-                alt="Me at CES 2024 in Las Vegas."
+                title="Me at CES 2026 in Las Vegas."
+                alt="Me at CES 2026 in Las Vegas."
               />
             </div>
             <div className="media-body gallery-caption">
-              <p>@ CES 2024 tech convention in Las Vegas.</p>
+              <p>
+                CES 2026 tech convention in Las Vegas. Third one I've attended.
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide className="gallery media d-flex">
@@ -146,7 +151,7 @@ const Gallery = () => {
             </div>
             <div className="media-body gallery-caption">
               <p>
-                At CS Games 2023, in UQAC, Quebec - 4th Place Full-Stack
+                At CS Games 2023, in UQAC Saguenay, QC - 4th Place in Full-Stack
                 Development (uWindsor Team B).
               </p>
             </div>
@@ -173,8 +178,8 @@ const Gallery = () => {
                 width={452.5}
                 height={603}
                 src="/static/img/gallery/sony.jpg"
-                title="Studio setup."
-                alt="A picture of my studio setup."
+                title="Tech stuff."
+                alt="Tech stuff."
               />
             </div>
             <div className="media-body gallery-caption">
