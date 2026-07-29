@@ -20,9 +20,13 @@ const BasePopup = ({ open, close, children }) => {
     <div className={`popup-box ${open ? "opened" : ""}`}>
       <div className="box-inner" ref={domNode}>
         <div className="close">
-          <a onClick={() => close()}>
+          <button
+            type="button"
+            aria-label="Close project details"
+            onClick={() => close()}
+          >
             <i className="fa fa-times"></i>
-          </a>
+          </button>
         </div>
         <div className="description-wrap">{children}</div>
       </div>

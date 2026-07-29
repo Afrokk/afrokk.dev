@@ -81,16 +81,19 @@
             left: -10.8%
             top: -35px
 
-    & .close a
+    & .close button
         display: block
         width: 40px
         height: 40px
+        padding: 0
         opacity: 1
         text-decoration: none
         color: $px-gray
+        background: transparent
         border: 2px solid $px-gray
         border-radius: 5px
         position: relative
+        cursor: pointer
         -webkit-transition: all 0.3s ease
         -moz-transition: all 0.3s ease
         -ms-transition: all 0.3s ease
@@ -111,7 +114,7 @@
         outline: none
         border-radius: 100%
 
-    & .close a i
+    & .close button i
         position: absolute
         opacity: 1
         top: 50%
