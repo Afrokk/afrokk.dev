@@ -1,20 +1,63 @@
+import { useEffect, useRef } from "react";
 import SwiperCore, {
   Autoplay,
   EffectFade,
   Grid,
+  Keyboard,
   Navigation,
   Pagination,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
 import Image from "next/image";
 
+SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid, Keyboard]);
+
 const Gallery = () => {
+  const galleryRef = useRef(null);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const gallery = galleryRef.current;
+
+    if (!gallery || !("IntersectionObserver" in window)) {
+      swiperRef.current?.autoplay.start();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const autoplay = swiperRef.current?.autoplay;
+
+        if (!autoplay) return;
+
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          if (!autoplay.running) autoplay.start();
+        } else if (autoplay.running) {
+          autoplay.stop();
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(gallery);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleSwiper = (swiper) => {
+    swiperRef.current = swiper;
+    swiper.autoplay.stop();
+  };
+
   const props = {
     slidesPerView: 2,
     spaceBetween: 25,
     loop: true,
-    autoplay: false,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     pagination: {
       el: ".owl-dots",
       clickable: true,
@@ -23,6 +66,10 @@ const Gallery = () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
       clickable: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
     breakpoints: {
       0: { slidesPerView: 1 },
@@ -36,8 +83,8 @@ const Gallery = () => {
           <h3>Hackathons & Gallery.</h3>
         </div>
       </div>
-      <div className="container">
-        <Swiper {...props}>
+      <div className="container" ref={galleryRef}>
+        <Swiper {...props} onSwiper={handleSwiper}>
           <SwiperSlide className="gallery media d-flex">
             <div>
               <Image
