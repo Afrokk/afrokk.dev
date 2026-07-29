@@ -34,10 +34,9 @@ const Skills = () => {
               <div className="skills-box">
                 <h3>My skills</h3>
                 <p>
-                  I am <b>language-agnostic</b>, however, I have worked with
-                  several technologies and frameworks during my open source
-                  projects, freelancing and at my job. These include Python,
-                  JavaScript/TypeScript, Java, and more.
+                  I am <b>language-agnostic</b>. I have worked with
+                  several technologies and frameworks. These include Python,
+                  JavaScript/TypeScript, Java, and Go.
                 </p>
                 <div className="row">
                   <div className="col-md-6">
@@ -54,7 +53,7 @@ const Skills = () => {
                     <h5>DevOps</h5>
                     <ul>
                       <li>
-                        <b>Cloud Providers:</b> GCP
+                        <b>Cloud Providers:</b> AWS, GCP
                       </li>
                       <li>
                         <b>Container Orchestration:</b> Docker Swarm, Kubernetes
@@ -84,12 +83,12 @@ const Skills = () => {
                         <b>Server:</b> Node.js, Express, Flask, Sanic
                       </li>
                       <li>
-                        <b>Markup:</b> HTML, CSS, SASS, SCSS, Tailwind, Shadcn
+                        <b>Markup:</b> HTML, CSS, SASS, SCSS, Tailwind
                       </li>
                     </ul>
                     <h5>Design</h5>
                     <ul>
-                      <li>Adobe Suite (PS/Ae/Pr/XD)</li>
+                      <li>Adobe Suite (Ps/Ae/Pr/XD)</li>
                       <li>
                         <b>UI/UX:</b> Figma
                       </li>
@@ -101,6 +100,9 @@ const Skills = () => {
                       </li>
                       <li>
                         <b>Model Hub:</b> Hugging Face
+                      </li>
+                      <li>
+                        <b>Infra:</b> RAG pipelines, Vector Databases (pgVector, Pinecone)
                       </li>
                       <li>
                         <b>LLM Orchestration:</b> LangChain

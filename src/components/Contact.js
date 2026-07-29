@@ -37,7 +37,7 @@ const Contact = () => {
           <div className="col-md-7 col-lg-8">
             <div className="contact-form p-5">
               <div>
-                <h4>Reach out to me.</h4>
+                <h4>Reach out.</h4>
                 <div className="btn-bar d-flex contact-cta">
                   <a
                     className="px-btn px-btn-theme m-lg-3"

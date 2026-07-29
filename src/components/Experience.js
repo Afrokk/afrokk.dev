@@ -19,7 +19,7 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              <b>Full-stack / Infrastructure engineer</b> at McGill University,
+              <b>Senior Full-stack / Infrastructure engineer</b> at McGill University,
               building and maintaining <b>high-uptime web platforms</b>,{" "}
               <b>data processing systems</b>, and{" "}
               <b>compute cluster infrastructure</b> used for large-scale
@@ -33,9 +33,9 @@ const Experience = () => {
               fewer failed calls.
             </li>
             <li>
-              Operate and scale <b>10+ node compute clusters</b> (petabyte-scale
+              Operating and scaling high-uptime <b>compute clusters</b> (petabyte-scale
               data flow): <b>containerized</b> legacy services, set up secure
-              deployments with <b>Docker secrets</b>, <b>Prometheus/Grafana</b>{" "}
+              deployments with <b>Docker Secrets</b>, <b>Prometheus/Grafana</b>{" "}
               monitoring, automated backups/cron jobs, and recovery workflows
               for missing data and hardware issues (ZFS, disks, LDAP auth).
             </li>
@@ -99,7 +99,14 @@ const Experience = () => {
       title: "Full Stack AI Developer",
       company: (
         <>
-          Independent Consultant /{" "}
+          <a
+            href="https://github.com/afrokk-studio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            afrokk.studio
+          </a>{" "}
+          /{" "}
           <a
             href="https://www.upwork.com/freelancers/afrokkdev"
             target="_blank"
@@ -116,9 +123,11 @@ const Experience = () => {
         <>
           <ul>
             <li>
-              Shipped <b>AI-enabled web apps</b> and tools using <b>Next.js</b>,{" "}
-              <b>Node.js</b>, <b>Python</b>, and <b>TypeScript</b>, from
-              prototype to <b>production</b>.
+              Shipped multiple <b>AI-enabled apps</b> and tools using{" "}
+              <b>Next.js</b>, <b>Node.js</b>, <b>Python</b>, and{" "}
+              <b>TypeScript</b>, from prototype to <b>production</b>. Global
+              clients in <b>fintech</b>, <b>healthcare</b>, <b>compliance</b> &{" "}
+              <b>analytics</b>.
             </li>
             <li>
               <b>Led end-to-end handover</b> of a production{" "}
@@ -192,7 +201,7 @@ const Experience = () => {
 
   const [resumeCount, setResumeCount] = useState(3);
   const [hiddenExperiences, setHiddenExperiences] = useState(
-    resumeData.length - resumeCount
+    resumeData.length - resumeCount,
   );
 
   const handleLoadMore = () => {
@@ -234,7 +243,11 @@ const Experience = () => {
                         {experience.company} | {experience.location} |{" "}
                         {experience.date}
                       </label>
-                      <div className="rb-time">{experience.time}</div>
+                      {experience.time === "Full Time" && (
+                        <label className="rb-time">
+                          <b>{experience.time}</b>
+                        </label>
+                      )}
                       {experience.description}
                     </div>
                   </div>
