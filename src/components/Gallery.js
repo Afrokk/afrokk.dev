@@ -98,7 +98,7 @@ const Gallery = () => {
             </div>
             <div className="media-body gallery-caption">
               <p>
-                Science at the Dominion Radio Astronomy Observatory. Penticton,
+                Science at the Dominion Radio Astrophysical Observatory. Penticton,
                 BC.
               </p>
             </div>
